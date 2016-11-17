@@ -1,0 +1,938 @@
+** Starting KBM Server with max memory allowed = 4008 Mb. **
+[2016.09.20 15:46:26.360] <core.CmdLineArgHandler.logArgs> : -serverPolicyClass com.rocketsoft.nm.nortel.vpfm.server.NortelVpfmServerPolicy -modules . -httpRoot . -jdbcPort 1112 
+[15:46:26.500] <PropertyLoader.loadPropsInternal> : could not find properties file at rocket.kbm.server.properties
+Sep 20, 2016 3:46:26 PM com.rocketsoft.nm.licensing.DefaultLicenseMonitor checkAndStartLicenseMonitoring
+INFO: skipping key monitoring -- ClassLoader is AppClassLoader
+[15:46:26.500] <nm.nortel.vpfm.licensing.NortelLicensingMonitor.checkAndStartLicenseMonitoring> : Contacting ECM to check license
+[15:46:26.500] <testLicense> WARNING: Development environment detected, will continue without valid VPFM/EPM license
+[15:46:26.531] <NortelLicenseExpirationMonitor.warningLoop> WARNING: License expires in 4 days and 3 hours.
+[15:46:26.547] <denali.agents.Agents.initialize> : AgentHost: id=a15052b.15749229873, rmiServerHost=10.21.5.43
+Sep 20, 2016 3:46:26 PM com.rocketsoft.core.logging.LogWrangler setLogFilePreamble
+INFO: 
+************************************
+*
+*  Tue Sep 20 15:46:26 EDT 2016
+*  Host address: 10.21.5.43
+*
+*  AFO/Monitoring
+*  1.1 Rev. 0 (Build 2118)
+*
+*  License (lev.2) expires 9/24/16 
+*    commercial device limit
+*    commercial client limit
+*  Java 1.7.0_71 (d:\jdk170_71\jre)
+*    Java(TM) SE Runtime Environment (build 1.7.0_71-b14)
+*    Java HotSpot(TM) 64-Bit Server VM (build 24.71-b01, mixed mode)
+*  Windows 7 Service Pack 1
+*
+************************************
+[15:46:26.578] <start> : Setting meta group to null
+[15:46:26.578] : Starting 'AFO/Monitoring Server' in agentGroup 'nwt-d-pf01'...
+[15:46:26.594] <initialize> : Local Addresses: /10.21.5.43, /fe80:0:0:0:51dd:bf27:e783:2733%11, /fe80:0:0:0:0:100:7f:fffe%12, /fe80:0:0:0:0:5efe:a15:52b%13, /fe80:0:0:0:a5ff:aaf9:f144:801e%17
+[15:46:26.594] : Self Address: /127.0.0.1
+[15:46:26.642] <icmp.ICMPv6Socket.<init>> WARNING: cannot find valid IPv6 address for this machine
+[15:46:26.642] <ICMPSocket.<init>> WARNING: Could not create ICMPv6 socket. IPv6 support disabled.
+[15:46:26.642] <denali.agents.Agents.initialize> : Agents.icmpEnabled=true
+[15:46:26.679] <AgentRMISocketFactory.createServerSocket2> : rmi server socket opened on port 3445
+[15:46:26.737] <AgentHostImpl.createPeerCleaner> : peer test threshold 5000
+[15:46:26.743] <nm.discovery.TopologyServer.acquireFileLock> : Acquired respository lock: d:\dev\afo\nm\products\pinpoint\common\.\root.lock
+[15:46:26.756] <denali.model.ServerImpl.startHttpServer> : Starting HTTP server on port 80 at address 0.0.0.0
+[15:46:26.874] <denali.web.WebServer.addServletContext> : Added ServletContext at /som
+[15:46:26.974] : webclient is set as default
+[15:46:26.974] : Added ServletContext at /webclient
+[15:46:27.026] : Added ServletContext at /ws
+[15:46:27.100] <denali.beanserver.agent.BeanServerAgentImpl.<init>> : setting repository root: d:\dev\afo\nm\products\pinpoint\common, allow JXO: false
+[15:46:27.528] <nm.classification.ClassificationLibraryImpl.<init>> : processing 3 beans...
+[15:46:27.736] <denali.agents.Portal.<init>> : starting port multicast processing...
+[15:46:27.737] : starting multicast channel on 10.21.5.43
+[15:46:27.739] : starting multicast channel on fe80:0:0:0:51dd:bf27:e783:2733%11
+[15:46:27.739] : starting multicast channel on fe80:0:0:0:0:100:7f:fffe%12
+[15:46:27.739] : starting multicast channel on fe80:0:0:0:0:5efe:a15:52b%13
+[15:46:27.739] : starting multicast channel on fe80:0:0:0:a5ff:aaf9:f144:801e%17
+[15:46:27.741] <Portal$2.run> : starting tcp listener on 0.0.0.0:3444
+[15:46:29.583] <nm.discovery.RuntimeRelationAgentImpl.startDaemonThread> WARNING: Starting 30 daemon threads for RuntimeRelationAgentImpl
+[15:46:29.654] <SchematicBuilder.ensureGraphFactoryIntitialized> : using com.rocketsoft.gle.glaylib.GLGraphFactory graph layout engine
+[15:46:29.654] <<init>> : objectConnectionConfiguration = <com.rocketsoft.denali.model.ConnectionConfiguration ObjectConnection in com.rocketsoft.denali.modules.Network : null>,<com.rocketsoft.denali.model.ConnectionConfiguration ObjectBackupConnection in com.rocketsoft.denali.modules.Network : null>
+[15:46:29.911] <denali.agents.AbstractAgentImpl.getMethodQueue> : method queue 'listeners#0' created for <Agent intf=com.rocketsoft.nm.discovery.DomainManager impl=<nm.discovery.DiscoveryManagerImpl> host=local agentId=18>
+[15:46:32.211] : method queue 'listeners#0' created for <Agent intf=com.rocketsoft.nm.blackboard.Blackboard impl=<nm.blackboard.BlackboardImpl> host=local agentId=23>
+[15:46:32.229] <nm.eventlogging.EventLogger.init> : Event logging initialized
+[15:46:32.233] <nm.server.ServerVMMonitor.init> : starting VM monitoring
+[15:46:32.234] <<init>> : got beans com.sun.management.OperatingSystem; sun.management.ThreadImpl; sun.management.ClassLoadingImpl
+[15:46:32.802] <denali.agents.AbstractAgentImpl.getMethodQueue> : method queue 'updates#1' created for <Agent intf=com.rocketsoft.nm.blackboard.Blackboard impl=<nm.blackboard.BlackboardImpl> host=local agentId=23>
+[15:46:32.860] <core.ObjectPool.<init>> : pool of 10 HashMap elements created in com.rocketsoft.nm.acquisition.DomainElementGroup.<clinit>(DomainElementGroup.java:40)
+[15:46:33.828] <nm.status.StatusPropagator.<init>> : using com.rocketsoft.nm.nortel.vpfm.server.StatusPropagatingRelation as status relation
+[15:46:33.906] <nm.actions.ActionExecutionAgentImpl.setLocalServerAgent> : Setting local server agent <nm.actions.ActionExecutionAgentImpl>
+[15:46:33.972] <beans.BeanLibraryStructureLogger.beanAdded> : Bean File Systems is overriden in library /knowledge/product/dashboardTemplates/NetworkBase
+[15:46:33.972] : Bean Unix File Systems is overriden in library /knowledge/product/dashboardTemplates/NetworkBase
+[15:46:34.595] <nm.server.ClientUpgradeAgentImpl.createLocalAgent> : base URL http://10.21.5.43:80
+[15:46:34.968] <asn1.MibRepositoryImpl.getModuleName> WARNING: probably not a mib .\mibs\CVS\Entries
+[15:46:34.969] WARNING: probably not a mib .\mibs\CVS\Entries.Extra
+[15:46:34.970] WARNING: probably not a mib .\mibs\CVS\Entries.Extra.Old
+[15:46:34.970] WARNING: probably not a mib .\mibs\CVS\Entries.Old
+[15:46:34.971] WARNING: probably not a mib .\mibs\CVS\Repository
+[15:46:34.971] WARNING: probably not a mib .\mibs\CVS\Root
+[15:46:34.972] WARNING: probably not a mib .\mibs\CVS\Tag
+[15:46:34.973] WARNING: probably not a mib .\mibs\CVS\Template
+[15:46:34.976] <nm.nortel.vpfm.server.NortelUcmUtils.setupHosts> WARNING: Leaving UCM central port as 443
+[15:46:34.985] WARNING: Leaving UCM Member port as 443
+[15:46:34.992] WARNING: Leaving UCM Primary port as 443
+At least one MIB conflict could not be resolved. See MIB manager log for details.
+[15:46:35.311] <asn1.MibRepositoryImpl.getModuleName> WARNING: probably not a mib .\mibs\CVS\Entries
+[15:46:35.311] WARNING: probably not a mib .\mibs\CVS\Entries.Extra
+[15:46:35.311] WARNING: probably not a mib .\mibs\CVS\Entries.Extra.Old
+[15:46:35.311] WARNING: probably not a mib .\mibs\CVS\Entries.Old
+[15:46:35.312] WARNING: probably not a mib .\mibs\CVS\Repository
+[15:46:35.312] WARNING: probably not a mib .\mibs\CVS\Root
+[15:46:35.312] WARNING: probably not a mib .\mibs\CVS\Tag
+[15:46:35.312] WARNING: probably not a mib .\mibs\CVS\Template
+At least one MIB conflict was resolved. See MIB manager log for details.
+[15:46:36.073] WARNING: probably not a mib .\mibs\CVS\Entries
+[15:46:36.073] WARNING: probably not a mib .\mibs\CVS\Entries.Extra
+[15:46:36.073] WARNING: probably not a mib .\mibs\CVS\Entries.Extra.Old
+[15:46:36.073] WARNING: probably not a mib .\mibs\CVS\Entries.Old
+[15:46:36.074] WARNING: probably not a mib .\mibs\CVS\Repository
+[15:46:36.074] WARNING: probably not a mib .\mibs\CVS\Root
+[15:46:36.074] WARNING: probably not a mib .\mibs\CVS\Tag
+[15:46:36.074] WARNING: probably not a mib .\mibs\CVS\Template
+log4j:WARN No appenders could be found for logger (org.jnp.interfaces.NamingContext).
+log4j:WARN Please initialize the log4j system properly.
+[15:46:36.403] WARNING: probably not a mib .\mibs\CVS\Entries
+[15:46:36.404] WARNING: probably not a mib .\mibs\CVS\Entries.Extra
+[15:46:36.404] WARNING: probably not a mib .\mibs\CVS\Entries.Extra.Old
+[15:46:36.404] WARNING: probably not a mib .\mibs\CVS\Entries.Old
+[15:46:36.404] WARNING: probably not a mib .\mibs\CVS\Repository
+[15:46:36.405] WARNING: probably not a mib .\mibs\CVS\Root
+[15:46:36.405] WARNING: probably not a mib .\mibs\CVS\Tag
+[15:46:36.405] WARNING: probably not a mib .\mibs\CVS\Template
+[15:46:37.362] <MibManager.integrate> WARNING: ignoring new module named <ModuleIdentity null lastUpdate=0604062300Z org=Nortel>
+[15:46:37.878] <MibRepositoryImpl.getModuleName> WARNING: probably not a mib .\mibs\CVS\Entries
+[15:46:37.878] WARNING: probably not a mib .\mibs\CVS\Entries.Extra
+[15:46:37.878] WARNING: probably not a mib .\mibs\CVS\Entries.Extra.Old
+[15:46:37.878] WARNING: probably not a mib .\mibs\CVS\Entries.Old
+[15:46:37.878] WARNING: probably not a mib .\mibs\CVS\Repository
+[15:46:37.878] WARNING: probably not a mib .\mibs\CVS\Root
+[15:46:37.878] WARNING: probably not a mib .\mibs\CVS\Tag
+[15:46:37.878] WARNING: probably not a mib .\mibs\CVS\Template
+[15:46:39.823] WARNING: probably not a mib .\mibs\CVS\Entries
+[15:46:39.823] WARNING: probably not a mib .\mibs\CVS\Entries.Extra
+[15:46:39.823] WARNING: probably not a mib .\mibs\CVS\Entries.Extra.Old
+[15:46:39.823] WARNING: probably not a mib .\mibs\CVS\Entries.Old
+[15:46:39.824] WARNING: probably not a mib .\mibs\CVS\Repository
+[15:46:39.824] WARNING: probably not a mib .\mibs\CVS\Root
+[15:46:39.824] WARNING: probably not a mib .\mibs\CVS\Tag
+[15:46:39.824] WARNING: probably not a mib .\mibs\CVS\Template
+[15:46:40.005] WARNING: probably not a mib .\mibs\CVS\Entries
+[15:46:40.006] WARNING: probably not a mib .\mibs\CVS\Entries.Extra
+[15:46:40.006] WARNING: probably not a mib .\mibs\CVS\Entries.Extra.Old
+[15:46:40.006] WARNING: probably not a mib .\mibs\CVS\Entries.Old
+[15:46:40.006] WARNING: probably not a mib .\mibs\CVS\Repository
+[15:46:40.006] WARNING: probably not a mib .\mibs\CVS\Root
+[15:46:40.006] WARNING: probably not a mib .\mibs\CVS\Tag
+[15:46:40.007] WARNING: probably not a mib .\mibs\CVS\Template
+[15:46:40.158] WARNING: probably not a mib .\mibs\CVS\Entries
+[15:46:40.158] WARNING: probably not a mib .\mibs\CVS\Entries.Extra
+[15:46:40.159] WARNING: probably not a mib .\mibs\CVS\Entries.Extra.Old
+[15:46:40.159] WARNING: probably not a mib .\mibs\CVS\Entries.Old
+[15:46:40.159] WARNING: probably not a mib .\mibs\CVS\Repository
+[15:46:40.159] WARNING: probably not a mib .\mibs\CVS\Root
+[15:46:40.159] WARNING: probably not a mib .\mibs\CVS\Tag
+[15:46:40.160] WARNING: probably not a mib .\mibs\CVS\Template
+[15:46:41.101] <nm.nortel.vpfm.server.NortelVpfmServerPolicy$NortelVpfmDomainInitializer.sendDomainInformMessage> WARNING: Error on loading domain informer com.rocketsoft.nm.discovery.DomainInitializingInformerException: Error on initializing Domain Initializing Informer
+[15:46:43.986] <nm.eventlogging.EventLogger.loadConfiguration> : logger <self events>/#0: successful initialization of LogHandler for defaultJdbc
+[15:46:43.986] <start> : starting logger <self events>/#0
+[15:46:43.986] : Event Logger <self events>/#0 enabled
+[15:46:43.988] <loadConfiguration> : logger Default/#1: successful initialization of LogHandler for defaultJdbc
+[15:46:43.988] <start> : starting logger Default/#1
+[15:46:43.988] : Event Logger Default/#1 enabled
+[15:46:44.146] <loadConfiguration> : logger AFO/#2: successful initialization of LogHandler for defaultJdbc
+[15:46:44.146] <start> : starting logger AFO/#2
+[15:46:44.146] : Event Logger AFO/#2 enabled
+[15:46:44.147] <loadConfiguration> : logger avaya/#3: successful initialization of LogHandler for defaultJdbc
+[15:46:44.147] <start> : starting logger avaya/#3
+[15:46:44.147] : Event Logger avaya/#3 enabled
+[15:46:44.168] <loadConfiguration> : logger Avaya27/#4: successful initialization of LogHandler for defaultJdbc
+[15:46:44.168] <start> : starting logger Avaya27/#4
+[15:46:44.168] : Event Logger Avaya27/#4 enabled
+[15:46:44.172] <nm.discovery.DiscoveryRecipeImpl.loadWAN> : wanFileVersion=3
+[15:46:44.180] <nm.eventlogging.EventLogger.loadConfiguration> : logger Test/#5: successful initialization of LogHandler for defaultJdbc
+[15:46:44.180] <start> : starting logger Test/#5
+[15:46:44.180] : Event Logger Test/#5 enabled
+[15:46:44.198] <loadConfiguration> : logger WalthamWithVHVM/#6: successful initialization of LogHandler for defaultJdbc
+[15:46:44.198] <start> : starting logger WalthamWithVHVM/#6
+[15:46:44.198] : Event Logger WalthamWithVHVM/#6 enabled
+[15:46:44.204] <loadConfiguration> : logger SPB/#7: successful initialization of LogHandler for defaultJdbc
+[15:46:44.204] <nm.discovery.DiscoveryRecipeImpl.loadWAN> : wanFileVersion=3
+[15:46:44.204] <nm.eventlogging.EventLogger.start> : starting logger SPB/#7
+[15:46:44.204] : Event Logger SPB/#7 enabled
+[15:46:44.204] <loadConfiguration> : logger test2/#8: successful initialization of LogHandler for defaultJdbc
+[15:46:44.204] <start> : starting logger test2/#8
+[15:46:44.205] : Event Logger test2/#8 enabled
+[15:46:44.209] <nm.discovery.DiscoveryRecipeImpl.loadWAN> : wanFileVersion=3
+[15:46:44.209] <denali.beanserver.agent.BeanLibrary.waitForBeans> WARNING: /knowledge/site/discovery/policy beans are not loaded after 30 seconds, continue waiting...
+[15:46:44.210] : /knowledge/site/discovery/policy beans loadaded
+[15:46:44.212] <nm.eventlogging.EventLogger.loadConfiguration> : logger SIL/#9: successful initialization of LogHandler for defaultJdbc
+[15:46:44.212] <start> : starting logger SIL/#9
+[15:46:44.212] : Event Logger SIL/#9 enabled
+[15:46:44.213] <loadConfiguration> : logger ESXi-2/#10: successful initialization of LogHandler for defaultJdbc
+[15:46:44.213] <start> : starting logger ESXi-2/#10
+[15:46:44.213] : Event Logger ESXi-2/#10 enabled
+[15:46:44.219] <nm.discovery.DiscoveryRecipeImpl.loadWAN> : wanFileVersion=3
+[15:46:44.219] <nm.eventlogging.EventLogger.loadConfiguration> : logger WiFi Test/#11: successful initialization of LogHandler for defaultJdbc
+[15:46:44.220] <start> : starting logger WiFi Test/#11
+[15:46:44.220] : Event Logger WiFi Test/#11 enabled
+[15:46:44.239] <nm.model.WANImpl.readObject> : start read wan: 6027851123782582273:873230588
+[15:46:44.240] <nm.discovery.DiscoveryRecipeImpl.loadWAN> : wanFileVersion=3
+[15:46:44.257] : wanFileVersion=3
+[15:46:44.300] : wanFileVersion=3
+[15:46:44.300] <nm.model.WANImpl.readObject> : start read wan: 6172355092298072065:1518489380
+[15:46:44.300] : start read wan: 6174420073919283201:231655470
+[15:46:44.300] : start read wan: 6181190260932739073:1733819691
+[15:46:44.301] <nm.discovery.DiscoveryRecipeImpl.loadWAN> : wanFileVersion=3
+[15:46:44.301] : wanFileVersion=3
+[15:46:44.301] <nm.model.WANImpl.readObject> : start read wan: 6123352049481416705:998677645
+[15:46:44.301] : start read wan: 6171067315073843201:1799316637
+[15:46:44.301] : start read wan: 6064548080273850369:250001005
+[15:46:44.301] : start read wan: 6181193018301743105:1700920312
+[15:46:44.301] : start read wan: 6169952977218961409:2001684782
+[15:46:44.304] <nm.discovery.DiscoveryRecipeImpl.loadWAN> : wanFileVersion=3
+[15:46:44.321] <nm.model.WANImpl.readObject> : start read wan: 6171687156164067329:1846465616
+[15:46:44.330] : finish read wan: 6181193018301743105:1700920312
+[15:46:44.631] <irio.ClassDescriptor.getMethods> WARNING: interface com.rocketsoft.nm.model.DeviceInterface does not have method setID type long
+[15:46:44.761] <nm.model.WANImpl.setRuntimeDataConnection> : setting runtimeDataConnection to com.rocketsoft.nm.runtimedata.irio.IrioRuntimeDataConnection@179ffdb4
+[15:46:44.761] <createRuntimeRelations> : creating runtimeRelation "AvayaWLANAssociatedClientEntries" for domain test2
+[15:46:44.775] : creating runtimeRelation "AvayaWLANManagedAPEntries" for domain test2
+[15:46:44.775] : creating runtimeRelation "GeographicLocation" for domain test2
+[15:46:44.783] : creating runtimeRelation "InterfaceAdminStatus" for domain test2
+[15:46:44.790] : creating runtimeRelation "ObservedNetflows" for domain test2
+[15:46:44.797] : creating runtimeRelation "Processes" for domain test2
+[15:46:44.800] : creating runtimeRelation "TCPPorts" for domain test2
+[15:46:44.802] : creating runtimeRelation "UDPPorts" for domain test2
+[15:46:44.804] : creating runtimeRelation "VMHostVMAssociation" for domain test2
+[15:46:44.806] : creating runtimeRelation "VirtualDeviceAddresses" for domain test2
+[15:46:44.806] : creating runtimeRelation "WindowsServices2" for domain test2
+[15:46:44.809] : creating runtimeRelation "WirelessClientAssociation" for domain test2
+[15:46:44.976] <readObject> : finish read wan: 6181190260932739073:1733819691
+[15:46:45.366] <irio.ClassDescriptor.getMethods> WARNING: interface com.rocketsoft.nm.model.DeviceInterface does not have method setID type long
+[15:46:45.397] <nm.model.WANImpl.setRuntimeDataConnection> : setting runtimeDataConnection to com.rocketsoft.nm.runtimedata.irio.IrioRuntimeDataConnection@6b457b00
+[15:46:45.397] <createRuntimeRelations> : creating runtimeRelation "AvayaWLANAssociatedClientEntries" for domain Test
+[15:46:45.397] : creating runtimeRelation "AvayaWLANManagedAPEntries" for domain Test
+[15:46:45.397] : creating runtimeRelation "GeographicLocation" for domain Test
+[15:46:45.397] : creating runtimeRelation "InterfaceAdminStatus" for domain Test
+[15:46:45.397] : creating runtimeRelation "ObservedNetflows" for domain Test
+[15:46:45.397] : creating runtimeRelation "Processes" for domain Test
+[15:46:45.397] : creating runtimeRelation "TCPPorts" for domain Test
+[15:46:45.397] : creating runtimeRelation "UDPPorts" for domain Test
+[15:46:45.397] : creating runtimeRelation "VMHostVMAssociation" for domain Test
+[15:46:45.397] : creating runtimeRelation "VirtualDeviceAddresses" for domain Test
+[15:46:45.397] : creating runtimeRelation "WindowsServices2" for domain Test
+[15:46:45.398] : creating runtimeRelation "WirelessClientAssociation" for domain Test
+[15:46:45.501] <nm.discovery.NetworkInitializer.initNetworkInfo> : initializing network information
+[15:46:45.506] <nm.nortel.vpfm.profiles.ProfileReader.readProfiles> WARNING: Cannot read profiles xml file, initialProfiles.xml does not exist
+[15:46:45.506] <nm.model.ProductManager$1.run> WARNING: Could not load products from product supplier, products are null
+[15:46:46.310] <WANImpl.readObject> : finish read wan: 6174420073919283201:231655470
+[15:46:46.786] <irio.ClassDescriptor.getMethods> WARNING: interface com.rocketsoft.nm.model.DeviceInterface does not have method setID type long
+[15:46:46.817] <nm.model.WANImpl.setRuntimeDataConnection> : setting runtimeDataConnection to com.rocketsoft.nm.runtimedata.irio.IrioRuntimeDataConnection@3a711871
+[15:46:46.817] <createRuntimeRelations> : creating runtimeRelation "AvayaWLANAssociatedClientEntries" for domain avaya
+[15:46:46.817] : creating runtimeRelation "AvayaWLANManagedAPEntries" for domain avaya
+[15:46:46.817] : creating runtimeRelation "GeographicLocation" for domain avaya
+[15:46:46.817] : creating runtimeRelation "InterfaceAdminStatus" for domain avaya
+[15:46:46.817] : creating runtimeRelation "ObservedNetflows" for domain avaya
+[15:46:46.819] : creating runtimeRelation "Processes" for domain avaya
+[15:46:46.821] : creating runtimeRelation "TCPPorts" for domain avaya
+[15:46:46.822] : creating runtimeRelation "UDPPorts" for domain avaya
+[15:46:46.824] : creating runtimeRelation "VMHostVMAssociation" for domain avaya
+[15:46:46.826] : creating runtimeRelation "VirtualDeviceAddresses" for domain avaya
+[15:46:46.826] : creating runtimeRelation "WindowsServices2" for domain avaya
+[15:46:46.827] : creating runtimeRelation "WirelessClientAssociation" for domain avaya
+[15:46:46.991] <readObject> : finish read wan: 6169952977218961409:2001684782
+[15:46:47.321] <irio.ClassDescriptor.getMethods> WARNING: interface com.rocketsoft.nm.model.DeviceInterface does not have method setID type long
+[15:46:47.366] <nm.model.WANImpl.setRuntimeDataConnection> : setting runtimeDataConnection to com.rocketsoft.nm.runtimedata.irio.IrioRuntimeDataConnection@27d3b472
+[15:46:47.366] <createRuntimeRelations> : creating runtimeRelation "AvayaWLANAssociatedClientEntries" for domain WiFi Test
+[15:46:47.366] : creating runtimeRelation "AvayaWLANManagedAPEntries" for domain WiFi Test
+[15:46:47.367] : creating runtimeRelation "GeographicLocation" for domain WiFi Test
+[15:46:47.367] : creating runtimeRelation "InterfaceAdminStatus" for domain WiFi Test
+[15:46:47.367] : creating runtimeRelation "ObservedNetflows" for domain WiFi Test
+[15:46:47.369] : creating runtimeRelation "Processes" for domain WiFi Test
+[15:46:47.370] : creating runtimeRelation "TCPPorts" for domain WiFi Test
+[15:46:47.372] : creating runtimeRelation "UDPPorts" for domain WiFi Test
+[15:46:47.374] : creating runtimeRelation "VMHostVMAssociation" for domain WiFi Test
+[15:46:47.376] : creating runtimeRelation "VirtualDeviceAddresses" for domain WiFi Test
+[15:46:47.376] : creating runtimeRelation "WindowsServices2" for domain WiFi Test
+[15:46:47.378] : creating runtimeRelation "WirelessClientAssociation" for domain WiFi Test
+[15:46:47.617] <readObject> : finish read wan: 6172355092298072065:1518489380
+[15:46:47.870] <irio.ClassDescriptor.getMethods> WARNING: interface com.rocketsoft.nm.model.DeviceInterface does not have method setID type long
+[15:46:47.900] <nm.model.WANImpl.setRuntimeDataConnection> : setting runtimeDataConnection to com.rocketsoft.nm.runtimedata.irio.IrioRuntimeDataConnection@524e165
+[15:46:47.900] <createRuntimeRelations> : creating runtimeRelation "AvayaWLANAssociatedClientEntries" for domain Avaya27
+[15:46:47.900] : creating runtimeRelation "AvayaWLANManagedAPEntries" for domain Avaya27
+[15:46:47.900] : creating runtimeRelation "GeographicLocation" for domain Avaya27
+[15:46:47.900] : creating runtimeRelation "InterfaceAdminStatus" for domain Avaya27
+[15:46:47.901] : creating runtimeRelation "ObservedNetflows" for domain Avaya27
+[15:46:47.902] : creating runtimeRelation "Processes" for domain Avaya27
+[15:46:47.904] : creating runtimeRelation "TCPPorts" for domain Avaya27
+[15:46:47.906] : creating runtimeRelation "UDPPorts" for domain Avaya27
+[15:46:47.907] : creating runtimeRelation "VMHostVMAssociation" for domain Avaya27
+[15:46:47.909] : creating runtimeRelation "VirtualDeviceAddresses" for domain Avaya27
+[15:46:47.909] : creating runtimeRelation "WindowsServices2" for domain Avaya27
+[15:46:47.910] : creating runtimeRelation "WirelessClientAssociation" for domain Avaya27
+[15:46:48.015] <readObject> : finish read wan: 6064548080273850369:250001005
+[15:46:48.135] <irio.ClassDescriptor.getMethods> WARNING: interface com.rocketsoft.nm.model.DeviceInterface does not have method setID type long
+[15:46:48.161] <nm.model.WANImpl.setRuntimeDataConnection> : setting runtimeDataConnection to com.rocketsoft.nm.runtimedata.irio.IrioRuntimeDataConnection@23ecf2ea
+[15:46:48.161] <createRuntimeRelations> : creating runtimeRelation "AvayaWLANAssociatedClientEntries" for domain SPB
+[15:46:48.162] : creating runtimeRelation "AvayaWLANManagedAPEntries" for domain SPB
+[15:46:48.162] : creating runtimeRelation "GeographicLocation" for domain SPB
+[15:46:48.162] : creating runtimeRelation "InterfaceAdminStatus" for domain SPB
+[15:46:48.162] : creating runtimeRelation "ObservedNetflows" for domain SPB
+[15:46:48.164] : creating runtimeRelation "Processes" for domain SPB
+[15:46:48.165] : creating runtimeRelation "TCPPorts" for domain SPB
+[15:46:48.167] : creating runtimeRelation "UDPPorts" for domain SPB
+[15:46:48.169] : creating runtimeRelation "VMHostVMAssociation" for domain SPB
+[15:46:48.170] : creating runtimeRelation "VirtualDeviceAddresses" for domain SPB
+[15:46:48.170] : creating runtimeRelation "WindowsServices2" for domain SPB
+[15:46:48.172] : creating runtimeRelation "WirelessClientAssociation" for domain SPB
+[15:46:49.565] <readObject> : finish read wan: 6171687156164067329:1846465616
+[15:46:49.591] : finish read wan: 6171067315073843201:1799316637
+[15:46:49.684] <irio.ClassDescriptor.getMethods> WARNING: interface com.rocketsoft.nm.model.DeviceInterface does not have method setID type long
+[15:46:49.715] <nm.model.WANImpl.setRuntimeDataConnection> : setting runtimeDataConnection to com.rocketsoft.nm.runtimedata.irio.IrioRuntimeDataConnection@dd4e974
+[15:46:49.715] <createRuntimeRelations> : creating runtimeRelation "AvayaWLANAssociatedClientEntries" for domain ESXi-2
+[15:46:49.715] : creating runtimeRelation "AvayaWLANManagedAPEntries" for domain ESXi-2
+[15:46:49.715] : creating runtimeRelation "GeographicLocation" for domain ESXi-2
+[15:46:49.715] : creating runtimeRelation "InterfaceAdminStatus" for domain ESXi-2
+[15:46:49.715] : creating runtimeRelation "ObservedNetflows" for domain ESXi-2
+[15:46:49.716] : creating runtimeRelation "Processes" for domain ESXi-2
+[15:46:49.717] : creating runtimeRelation "TCPPorts" for domain ESXi-2
+[15:46:49.718] : creating runtimeRelation "UDPPorts" for domain ESXi-2
+[15:46:49.719] : creating runtimeRelation "VMHostVMAssociation" for domain ESXi-2
+[15:46:49.720] : creating runtimeRelation "VirtualDeviceAddresses" for domain ESXi-2
+[15:46:49.720] : creating runtimeRelation "WindowsServices2" for domain ESXi-2
+[15:46:49.721] : creating runtimeRelation "WirelessClientAssociation" for domain ESXi-2
+[15:46:49.730] <irio.ClassDescriptor.getMethods> WARNING: interface com.rocketsoft.nm.model.DeviceInterface does not have method setID type long
+[15:46:49.752] <nm.model.WANImpl.setRuntimeDataConnection> : setting runtimeDataConnection to com.rocketsoft.nm.runtimedata.irio.IrioRuntimeDataConnection@5cf458c3
+[15:46:49.752] <createRuntimeRelations> : creating runtimeRelation "AvayaWLANAssociatedClientEntries" for domain SIL
+[15:46:49.752] : creating runtimeRelation "AvayaWLANManagedAPEntries" for domain SIL
+[15:46:49.753] : creating runtimeRelation "GeographicLocation" for domain SIL
+[15:46:49.753] : creating runtimeRelation "InterfaceAdminStatus" for domain SIL
+[15:46:49.753] : creating runtimeRelation "ObservedNetflows" for domain SIL
+[15:46:49.754] : creating runtimeRelation "Processes" for domain SIL
+[15:46:49.756] : creating runtimeRelation "TCPPorts" for domain SIL
+[15:46:49.758] : creating runtimeRelation "UDPPorts" for domain SIL
+[15:46:49.759] : creating runtimeRelation "VMHostVMAssociation" for domain SIL
+[15:46:49.760] : creating runtimeRelation "VirtualDeviceAddresses" for domain SIL
+[15:46:49.761] : creating runtimeRelation "WindowsServices2" for domain SIL
+[15:46:49.762] : creating runtimeRelation "WirelessClientAssociation" for domain SIL
+[15:46:52.193] <icmp.NetworkInformation.getNetworkInformation> : localAddresses [<LocalInterface 10.21.5.43 maskLength=22 >, <LocalInterface fe80:0:0:0:51dd:bf27:e783:2733 maskLength=64 >]
+[15:46:52.193] : defaultGateways [/10.21.4.1]
+[15:46:52.194] : routerAddresses [<RouterInformation: 172.16.251.137>, <RouterInformation: 172.16.251.34>, <RouterInformation: 10.21.4.1>]
+[15:46:52.260] <nm.applications.topology.AppCureInitializer.initialize> : loaded the software definition libraries
+[15:46:52.369] : loaded app discovery libraries
+[15:46:52.402] <nm.notifications.NotificationConfigManagerImpl.<init>> : notificationStore: <nm.notifications.DefaultNotificationStore>
+[15:46:52.402] <initStorageEvaluators> : filterEvaluatorClass: null
+[15:46:52.434] <nm.applications.topology.AppCureInitializer.notificationInit> : making internal trap receiver
+[15:46:52.460] <core.ObjectPool.<init>> : pool of 100 int[] elements created in com.rocketsoft.ber.BER.<clinit>(BER.java:202)
+[15:46:52.467] <nm.applications.topology.AppCureInitializer.notificationInit> : making internal syslog receiver
+[15:46:52.521] <nm.acquisition.services.OperationTestAgentImpl.<init>> : created OperationTestAgentImpl
+[15:46:52.534] <nm.discovery.ProtocolChoiceWranglerImpl.createLocalAgent> : ProtocolChoiceWrangler loaded
+[15:46:52.555] <core.util.SystemUtilities.getTempDirectory> : tempDir is C:\Users\pfandel\AppData\Local\Temp
+[15:46:52.573] <denali.model.ServerImpl.main> : Server is ready.
+[15:46:52.574] <nm.discovery.DiscoveryManagerImpl.stateChanged> : state change: oldState: null newState ACTIVE
+[15:46:52.578] <nm.nortel.vpfm.server.NortelVpfmServerPolicy.productSpecificInitialization> WARNING: <ProductExcludePolicy AFO/Monitoring exclusions count 1>
+[15:46:52.578] WARNING: Adding server policy exclusion filter by OID: .1.3.6.1.4.1.99999999.1.1.*
+[15:46:53.266] <nm.model.WANImpl.readObject> : finish read wan: 6027851123782582273:873230588
+[15:46:53.484] <irio.ClassDescriptor.getMethods> WARNING: interface com.rocketsoft.nm.model.DeviceInterface does not have method setID type long
+[15:46:53.489] <nm.model.WANImpl.setRuntimeDataConnection> : setting runtimeDataConnection to com.rocketsoft.nm.runtimedata.irio.IrioRuntimeDataConnection@4ca5ffae
+[15:46:53.489] <createRuntimeRelations> : creating runtimeRelation "AvayaWLANAssociatedClientEntries" for domain AFO
+[15:46:53.489] : creating runtimeRelation "AvayaWLANManagedAPEntries" for domain AFO
+[15:46:53.489] : creating runtimeRelation "GeographicLocation" for domain AFO
+[15:46:53.489] : creating runtimeRelation "InterfaceAdminStatus" for domain AFO
+[15:46:53.489] : creating runtimeRelation "ObservedNetflows" for domain AFO
+[15:46:53.491] : creating runtimeRelation "Processes" for domain AFO
+[15:46:53.492] : creating runtimeRelation "TCPPorts" for domain AFO
+[15:46:53.493] : creating runtimeRelation "UDPPorts" for domain AFO
+[15:46:53.495] : creating runtimeRelation "VMHostVMAssociation" for domain AFO
+[15:46:53.496] : creating runtimeRelation "VirtualDeviceAddresses" for domain AFO
+[15:46:53.496] : creating runtimeRelation "WindowsServices2" for domain AFO
+[15:46:53.498] : creating runtimeRelation "WirelessClientAssociation" for domain AFO
+[15:46:54.428] <nm.jdbc.server.KbmDbServer.start> : JDBC server started on port 1112
+[15:46:56.151] <denali.web.HttpConnectionHandler.clearLogs> : 0 logs cleared
+[15:46:56.176] <jdbc.server.LocalConnectionFactory.<init>> : connecting to local JDBC server running on port 1112
+[15:46:56.188] <nm.webclient.servlet.WebClientUtils.init> : webservicesBaseURL=http://localhost:80/ws
+[15:46:56.188] : web app.container: Denali Web Server/2.0
+[15:46:56.188] : autologin guest/guest
+[15:46:56.220] <nm.security.LoginManager.initializeSSOProviderIfNecessary> : attempting to make SSOProvider com.rocketsoft.nm.nortel.vpfm.security.NortelSSOProvider
+[15:46:56.222] : established SSO Provider com.rocketsoft.nm.nortel.vpfm.security.NortelSSOProvider@72f8d89e
+[15:46:56.463] <nm.webservices.client.ClientPolicyService.<init>> : creating ClientPolicyService
+[15:46:56.467] : done creating ClientPolicyService
+[15:46:56.470] <denali.export.ExportLayoutFactory.initProviders> : loading export providers from file:/D:/dev/afo/java/META-INF/denali.export.provider
+[15:47:04.979] <nm.model.WANImpl.readObject> : finish read wan: 6123352049481416705:998677645
+[15:47:05.559] <irio.ClassDescriptor.getMethods> WARNING: interface com.rocketsoft.nm.model.DeviceInterface does not have method setID type long
+[15:47:05.577] <nm.model.WANImpl.setRuntimeDataConnection> : setting runtimeDataConnection to com.rocketsoft.nm.runtimedata.irio.IrioRuntimeDataConnection@60b3813d
+[15:47:05.577] <createRuntimeRelations> : creating runtimeRelation "AvayaWLANAssociatedClientEntries" for domain WalthamWithVHVM
+[15:47:05.577] : creating runtimeRelation "AvayaWLANManagedAPEntries" for domain WalthamWithVHVM
+[15:47:05.578] : creating runtimeRelation "GeographicLocation" for domain WalthamWithVHVM
+[15:47:05.578] : creating runtimeRelation "InterfaceAdminStatus" for domain WalthamWithVHVM
+[15:47:05.578] : creating runtimeRelation "ObservedNetflows" for domain WalthamWithVHVM
+[15:47:05.579] : creating runtimeRelation "Processes" for domain WalthamWithVHVM
+[15:47:05.580] : creating runtimeRelation "TCPPorts" for domain WalthamWithVHVM
+[15:47:05.580] : creating runtimeRelation "UDPPorts" for domain WalthamWithVHVM
+[15:47:05.581] : creating runtimeRelation "VMHostVMAssociation" for domain WalthamWithVHVM
+[15:47:05.582] : creating runtimeRelation "VirtualDeviceAddresses" for domain WalthamWithVHVM
+[15:47:05.582] : creating runtimeRelation "WindowsServices2" for domain WalthamWithVHVM
+[15:47:05.583] : creating runtimeRelation "WirelessClientAssociation" for domain WalthamWithVHVM
+[15:47:09.048] <nm.model.software.ApplicationElementUpdateHandler.initializeElement> WARNING: failed to find application with id 6131496110633517086 for <WindowsServiceImpl: OracleDBConsoleorcl on nwt-vm-smdb-w7:id=6131495973194563965:deviceID=6131495973194563822;uid=6131495973194563822:OracleDBConsoleorcl;6131495973194563965:1708067353> instance null in domain WalthamWithVHVM
+[15:47:09.048] WARNING: failed to find application with id 6131496110633517081 for <WindowsServiceImpl: OracleJobSchedulerORCL on nwt-vm-smdb-w7:id=6131495973194563966:deviceID=6131495973194563822;uid=6131495973194563822:OracleJobSchedulerORCL;6131495973194563966:2074092422> instance null in domain WalthamWithVHVM
+[15:47:09.051] WARNING: failed to find application with id 6131496037619073205 for <WindowsServiceImpl: OracleDBConsoleorcl on nwt-vm-smdb-2k8:id=6131495994669400348:deviceID=6131495994669400209;uid=6131495994669400209:OracleDBConsoleorcl;6131495994669400348:1286662993> instance null in domain WalthamWithVHVM
+[15:47:09.052] WARNING: failed to find application with id 6131496037619073199 for <WindowsServiceImpl: OracleJobSchedulerORCL on nwt-vm-smdb-2k8:id=6131495994669400349:deviceID=6131495994669400209;uid=6131495994669400209:OracleJobSchedulerORCL;6131495994669400349:1932081708> instance null in domain WalthamWithVHVM
+[15:47:09.054] WARNING: failed to find application with id 6131496024734172500 for <WindowsServiceImpl: OracleDBConsoleorcl11g on wal-vm-vo01:id=6131496003259335529:deviceID=6131496003259335427;uid=6131496003259335427:OracleDBConsoleorcl11g;6131496003259335529:1798035743> instance null in domain WalthamWithVHVM
+[15:47:09.055] WARNING: failed to find application with id 6131496024734172495 for <WindowsServiceImpl: OracleJobSchedulerORCL11G on wal-vm-vo01:id=6131496003259335531:deviceID=6131496003259335427;uid=6131496003259335427:OracleJobSchedulerORCL11G;6131496003259335531:1367033339> instance null in domain WalthamWithVHVM
+[15:47:09.056] WARNING: failed to find application with id 6131496059093909791 for <WindowsServiceImpl: OracleDBConsoleorcl on wal-vm-oratst1:id=6131496003259336126:deviceID=6131496003259336018;uid=6131496003259336018:OracleDBConsoleorcl;6131496003259336126:393411161> instance null in domain WalthamWithVHVM
+[15:47:09.056] WARNING: failed to find application with id 6131496059093909788 for <WindowsServiceImpl: OracleJobSchedulerORCL on wal-vm-oratst1:id=6131496003259336127:deviceID=6131496003259336018;uid=6131496003259336018:OracleJobSchedulerORCL;6131496003259336127:2106717461> instance null in domain WalthamWithVHVM
+[15:47:09.060] WARNING: failed to find application with id 6131496067683844181 for <WindowsServiceImpl: OracleDBConsoleorcl on wal-vm-oratst2:id=6131496029029139388:deviceID=6131496029029139276;uid=6131496029029139276:OracleDBConsoleorcl;6131496029029139388:558201554> instance null in domain WalthamWithVHVM
+[15:47:09.061] WARNING: failed to find application with id 6131496067683844178 for <WindowsServiceImpl: OracleJobSchedulerORCL on wal-vm-oratst2:id=6131496029029139389:deviceID=6131496029029139276;uid=6131496029029139276:OracleJobSchedulerORCL;6131496029029139389:1484947982> instance null in domain WalthamWithVHVM
+[15:47:09.064] WARNING: failed to find application with id 6131496080568746282 for <WindowsServiceImpl: OracleDBConsoleorcl on nwt-vm-smdb-vis:id=6131496050503975725:deviceID=6131496050503975588;uid=6131496050503975588:OracleDBConsoleorcl;6131496050503975725:1469466072> instance null in domain WalthamWithVHVM
+[15:47:09.064] WARNING: failed to find application with id 6131496080568746276 for <WindowsServiceImpl: OracleJobSchedulerORCL on nwt-vm-smdb-vis:id=6131496050503975726:deviceID=6131496050503975588;uid=6131496050503975588:OracleJobSchedulerORCL;6131496050503975726:1254331604> instance null in domain WalthamWithVHVM
+[15:47:11.498] <nm.acquisition.FastHistoryDb.<clinit>> : Property com.rocketsoft.nm.acquisition.FastHistoryDb.filesToKeepOpen not specified, using default 64
+[15:47:11.526] <FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\WalthamWithVHVM\snmp, assumed default configuration.
+[15:47:11.527] : Configuration file acqHistory\WalthamWithVHVM\snmp\db.cfg created with timeShift22
+[15:47:11.580] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:47:11 EDT 2016
+[15:47:11.591] <core.ObjectPool.<init>> : pool of 15 HashMap elements created in com.rocketsoft.nm.mep.eval.EvalEngine.<clinit>(EvalEngine.java:170)
+[15:47:11.592] : pool of 15 HashSet elements created in com.rocketsoft.nm.mep.eval.EvalEngine.<clinit>(EvalEngine.java:186)
+[15:47:11.838] <nm.acquisition.snmp.SNMPAcquisitionAgentImpl.connectionToServerEstablished> : connectionToServerEstablished, mibManager=com.rocketsoft.asn1.MibManager@4342637e
+[15:47:11.844] <core.ObjectPool.<init>> : pool of 5 LinkedHashMap elements created in com.rocketsoft.nm.poll.next.IPAvailabilityAgentImpl.<clinit>(IPAvailabilityAgentImpl.java:776)
+[15:47:11.845] : pool of 5 LinkedHashMap elements created in com.rocketsoft.nm.poll.next.IPAvailabilityAgentImpl.<clinit>(IPAvailabilityAgentImpl.java:792)
+[15:47:11.875] <nm.acquisition.FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\WalthamWithVHVM\ipAvailability, assumed default configuration.
+[15:47:11.875] <AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[15:47:11.876] <FastHistoryDb$DbConfiguration.load> : Configuration file acqHistory\WalthamWithVHVM\ipAvailability\db.cfg created with timeShift22
+[15:47:11.884] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:47:11 EDT 2016
+[15:47:12.045] <nm.poll.next.IPAvailabilityAgentImpl.<init>> : Starting availability agent for WalthamWithVHVM
+[15:47:12.061] <nm.acquisition.FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\WalthamWithVHVM\syslog, assumed default configuration.
+[15:47:12.062] : Configuration file acqHistory\WalthamWithVHVM\syslog\db.cfg created with timeShift22
+[15:47:12.062] <nm.reachabilityanalyzer.next.ReachabilityAnalyzerImpl.<init>> : creating ReachabilityAnalyzer WalthamWithVHVM
+[15:47:12.065] <nm.acquisition.AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:47:12 EDT 2016
+[15:47:12.256] <FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\WalthamWithVHVM\SystemMgmt, assumed default configuration.
+[15:47:12.257] : Configuration file acqHistory\WalthamWithVHVM\SystemMgmt\db.cfg created with timeShift22
+[15:47:12.261] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:47:12 EDT 2016
+[15:47:12.544] <FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\WalthamWithVHVM\cim, assumed default configuration.
+[15:47:12.545] : Configuration file acqHistory\WalthamWithVHVM\cim\db.cfg created with timeShift22
+[15:47:12.668] <nm.poll.next.ClosureHandler.populateFromStorage> : 100% devices found; 100% entrypoints found
+[15:47:12.981] <nm.acquisition.AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:47:12 EDT 2016
+[15:47:13.104] <FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\WalthamWithVHVM\soap, assumed default configuration.
+[15:47:13.105] : Configuration file acqHistory\WalthamWithVHVM\soap\db.cfg created with timeShift22
+[15:47:13.108] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:47:13 EDT 2016
+[15:47:13.119] <nm.mep.eval.EvalEngine.canHandleVariables> : agent snmp handles [InterfaceInformation.ifHCInOctets, InterfaceInformation.ifHCOutOctets, InterfaceInformation.ifHighSpeed, InterfaceInformation.ifInOctets, InterfaceInformation.ifSpeed, InterfaceInformation.supportsRateMetrics] but can't handle [InterfaceInformation.ifInRateExt] for category InterfaceInputUtilizationWarning but is continuing
+[15:47:13.120] : agent snmp handles [RAPID_CITY_8600_MIB_KHI_Information.rcKhiVlacpPortUpCount] but can't handle [RAPID_CITY_8600_MIB_KHI_Information.rcKhiVlacpTotalPortCount] for category RAPID_CITY_8600_MIB_rcKhiVlacpPortCountWarning but is continuing
+[15:47:13.121] : agent snmp handles [ProcessInformation.cpuTicksUsed, ProcessInformation.processId, ProcessInformation.processName, ProcessInformation.proportionalCpuUsageCalculation, ProcessInformation.summaryCpuTicksUsed] but can't handle [ProcessInformation.handleCount, ProcessInformation.parentProcessId, ProcessInformation.threadCount, ProcessInformation.virtualSize, ProcessInformation.workingSetSize] for category ProcessStatistic but is continuing
+[15:47:13.123] : agent snmp handles [FrameRelayVirtualCircuitEvent.frCircuitState] but can't handle [BecnsWarning.frCircuitReceivedBECNs] for category BecnsWarning but is continuing
+[15:47:13.123] : agent snmp handles [CpuInformation.cpuBusy] but can't handle [CpuInformation.idleCpu, CpuInformation.stolenCpu, CpuInformation.systemCpu, CpuInformation.userCpu, CpuInformation.waitCpu] for category CpuUtilizationPercent but is continuing
+[15:47:13.124] : agent snmp handles [FrameRelayVirtualCircuitEvent.frCircuitState] but can't handle [FecnsWarning.frCircuitReceivedFECNs] for category FecnsWarning but is continuing
+[15:47:13.124] : agent snmp handles [HsrpStateChange.hsrpState] but can't handle [HsrpStateChange.hsrpStateActive] for category HsrpStateChange but is continuing
+[15:47:13.124] : agent snmp handles [MemoryInformation.ioMemoryFree, MemoryInformation.ioMemoryUsed, MemoryInformation.procMemoryFree, MemoryInformation.procMemoryUsed, MemoryInformation.procMemoryUtil] but can't handle [MemoryInformation.pagedInSizePerSecond, MemoryInformation.pagedOutSizePerSecond] for category MemoryStatistic but is continuing
+[15:47:13.161] <nm.acquisition.AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[15:47:13.194] : connection to server established...
+[15:47:13.243] <FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\WalthamWithVHVM\software, assumed default configuration.
+[15:47:13.244] : Configuration file acqHistory\WalthamWithVHVM\software\db.cfg created with timeShift22
+[15:47:13.246] <nm.mep.eval.EvalEngine.canHandleVariables> : agent syslog handles [PhysicalInformation.moduleName] but can't handle [ModuleStateEvent.moduleAlarmState] for category ModuleAlarm but is continuing
+[15:47:13.249] <nm.acquisition.AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:47:13 EDT 2016
+[15:47:13.250] <connectionToServerEstablished> : connection to server established...
+[15:47:13.297] <nm.mep.eval.EvalEngine.canHandleVariables> : agent SystemMgmt handles [MemoryInformation.pagedInSizePerSecond, MemoryInformation.pagedOutSizePerSecond, MemoryInformation.procMemoryFree, MemoryInformation.procMemoryUsed, MemoryInformation.procMemoryUtil] but can't handle [MemoryInformation.ioMemoryFree, MemoryInformation.ioMemoryUsed] for category MemoryStatistic but is continuing
+[15:47:13.300] <nm.acquisition.AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[15:47:13.356] <AcquisitionManagerImpl.addAgent> : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.snmp.SNMPAcquisitionAgent impl=<nm.acquisition.snmp.SNMPAcquisitionAgentImpl> host=local agentId=160>, justAdded=true, justConnected=false
+[15:47:13.364] <nm.mep.eval.EvalEngine.canHandleVariables> : agent cim handles [MemoryInformation.availableSwapSpace] but can't handle [MemoryProblem.notificationSeverity] for category AvailableSwapSpaceTooLow but is continuing
+[15:47:13.364] : agent cim handles [MemoryInformation.procMemoryFree, MemoryInformation.procMemoryUsed, MemoryInformation.procMemoryUtil] but can't handle [MemoryInformation.ioMemoryFree, MemoryInformation.ioMemoryUsed, MemoryInformation.pagedInSizePerSecond, MemoryInformation.pagedOutSizePerSecond] for category MemoryStatistic but is continuing
+[15:47:13.367] <nm.acquisition.AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[15:47:13.439] <AcquisitionManagerImpl.addAgent> : adding/updating agent: <Agent intf=com.rocketsoft.nm.poll.next.IPAvailabilityAgent impl=<nm.poll.next.IPAvailabilityAgentImpl> host=local agentId=164>, justAdded=true, justConnected=false
+[15:47:13.439] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.snmp.SNMPAcquisitionAgent impl=<nm.acquisition.snmp.SNMPAcquisitionAgentImpl> host=local agentId=160>, justAdded=false, justConnected=true
+[15:47:13.468] <nm.mep.eval.EvalEngine.canHandleVariables> : agent soap handles [InterfaceInformation.ifInRateExt] but can't handle [InterfaceInformation.ifHCInOctets, InterfaceInformation.ifHCOutOctets, InterfaceInformation.ifHighSpeed, InterfaceInformation.ifInOctets, InterfaceInformation.ifSpeed, InterfaceInformation.supportsRateMetrics] for category InterfaceInputUtilizationWarning but is continuing
+[15:47:13.471] <nm.acquisition.AcquisitionManagerImpl.addAgent> : adding/updating agent: <Agent intf=com.rocketsoft.nm.poll.next.IPAvailabilityAgent impl=<nm.poll.next.IPAvailabilityAgentImpl> host=local agentId=164>, justAdded=false, justConnected=true
+[15:47:13.471] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.syslog.SyslogAcquisitionAgent impl=<nm.acquisition.syslog.SyslogAcquisitionAgentImpl> host=local agentId=168>, justAdded=true, justConnected=false
+[15:47:13.472] <nm.mep.eval.EvalEngine.canHandleVariables> : agent soap handles [CpuInformation.cpuBusy] but can't handle [CpuProblem.notificationSeverity] for category CpuUtilizationWarning but is continuing
+[15:47:13.473] : agent soap handles [MemoryInformation.procMemoryUtil] but can't handle [MemoryInformation.procMemoryFree, MemoryInformation.procMemoryUsed] for category ProcessorMemoryWarning but is continuing
+[15:47:13.478] : agent soap handles [TemperatureInformation.temperatureValue] but can't handle [TemperatureWarning.temperatureLimitHigh, TemperatureWarning.temperatureLimitLow, TemperatureWarning.temperatureState] for category TemperatureWarning but is continuing
+[15:47:13.479] : agent soap handles [CpuInformation.cpuBusy] but can't handle [CpuInformation.idleCpu, CpuInformation.stolenCpu, CpuInformation.systemCpu, CpuInformation.userCpu, CpuInformation.waitCpu] for category CpuUtilizationPercent but is continuing
+[15:47:13.480] : agent soap handles [ComputeProviderInformation.computeUtilization] but can't handle [ComputeProviderInformation.memoryFree, ComputeProviderInformation.memorySize, ComputeProviderInformation.memoryUsed, ComputeProviderInformation.memoryUtilization] for category ComputeProviderInformation but is continuing
+[15:47:13.483] <nm.acquisition.AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[15:47:13.489] <AcquisitionManagerImpl.addAgent> : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.syslog.SyslogAcquisitionAgent impl=<nm.acquisition.syslog.SyslogAcquisitionAgentImpl> host=local agentId=168>, justAdded=false, justConnected=true
+[15:47:13.507] : adding/updating agent: <Agent intf=com.rocketsoft.nm.systemmgmt.acquisition.SystemMgmtAcqAgent impl=<nm.systemmgmt.acquisition.SystemMgmtAcqAgentImpl> host=local agentId=173>, justAdded=true, justConnected=false
+[15:47:13.526] : adding/updating agent: <Agent intf=com.rocketsoft.nm.systemmgmt.acquisition.SystemMgmtAcqAgent impl=<nm.systemmgmt.acquisition.SystemMgmtAcqAgentImpl> host=local agentId=173>, justAdded=false, justConnected=true
+[15:47:13.534] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.cim.CIMAcquisitionAgent impl=<nm.acquisition.cim.CIMAcquisitionAgentImpl> host=local agentId=178>, justAdded=true, justConnected=false
+[15:47:13.536] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.cim.CIMAcquisitionAgent impl=<nm.acquisition.cim.CIMAcquisitionAgentImpl> host=local agentId=178>, justAdded=false, justConnected=true
+[15:47:13.537] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.soap.SOAPAcquisitionAgent impl=<nm.acquisition.soap.SOAPAcquisitionAgentImpl> host=local agentId=183>, justAdded=true, justConnected=false
+[15:47:13.652] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.soap.SOAPAcquisitionAgent impl=<nm.acquisition.soap.SOAPAcquisitionAgentImpl> host=local agentId=183>, justAdded=false, justConnected=true
+[15:47:13.654] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.software.SoftwareAcquisitionAgent impl=<nm.acquisition.software.SoftwareAcquisitionAgentImpl> host=local agentId=189>, justAdded=true, justConnected=false
+[15:47:13.657] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.software.SoftwareAcquisitionAgent impl=<nm.acquisition.software.SoftwareAcquisitionAgentImpl> host=local agentId=189>, justAdded=false, justConnected=true
+[15:47:28.129] <nm.acquisition.snmp.SNMPAcquisitionAgentImpl.addTasksForMonitoringRequest> : no applicable AcquisitionDefinitions or NotificationDefinitions for MonitoringRequest <MonitoringRequest id=WalthamWithVHVM/Non-Avaya Data Devices/KHI Information:8 domainName=WalthamWithVHVM pollPeriod=600000 size=57 categories=<EventCategorySet #2000392484 { PowerConsumptionHypercube}>> with variables [PowerConsumptionInformation.realTimePoeSavings, PowerConsumptionInformation.realTimeSlowDownSavings] and notifications []
+[15:48:50.551] <nm.poll.next.DevicePollWorker.clockStarted> : clock started
+[15:48:53.617] <nm.acquisition.snmp.SNMPAcquisitionAgentImpl.addTasksForMonitoringRequest> : no applicable AcquisitionDefinitions or NotificationDefinitions for MonitoringRequest <MonitoringRequest id=WalthamWithVHVM/Non-Avaya Data Devices/PoE Information:39 domainName=WalthamWithVHVM pollPeriod=600000 size=9 categories=<EventCategorySet #1294059971 { PowerConsumptionStatistic}>> with variables [PowerConsumptionInformation.realTimePoeSavings, PowerConsumptionInformation.realTimeSlowDownSavings] and notifications []
+[15:48:53.675] : no applicable AcquisitionDefinitions or NotificationDefinitions for MonitoringRequest <MonitoringRequest id=WalthamWithVHVM/Non-Avaya Data Devices/PoE Information:46 domainName=WalthamWithVHVM pollPeriod=600000 size=9 categories=<EventCategorySet #1707983545 { PowerConsumptionHypercube}>> with variables [PowerConsumptionInformation.realTimePoeSavings, PowerConsumptionInformation.realTimeSlowDownSavings] and notifications []
+[15:49:20.461] <denali.agents.AbstractAgentImpl.getMethodQueue> : method queue 'updates#1' created for <Agent intf=com.rocketsoft.nm.discovery.DomainManager impl=<nm.discovery.DiscoveryManagerImpl> host=local agentId=18>
+[15:49:43.552] <nm.reachabilityanalyzer.next.ReachabilityAnalyzerImpl.createSource> WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP2N04 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.58.14 timestamp=1474400983547 (Tue Sep 20 15:49:43 EDT 2016) responseTime=14000ms attempts=3>>]::null>
+[15:49:43.552] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP2N04 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.58.14 timestamp=1474400983547 (Tue Sep 20 15:49:43 EDT 2016) responseTime=14000ms attempts=3>>]::null>
+[15:50:39.074] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N06 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.16 timestamp=1474401039074 (Tue Sep 20 15:50:39 EDT 2016) responseTime=14002ms attempts=3>>]::null>
+[15:50:39.074] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N06 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.16 timestamp=1474401039074 (Tue Sep 20 15:50:39 EDT 2016) responseTime=14002ms attempts=3>>]::null>
+[15:50:55.482] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N07 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.17 timestamp=1474401055482 (Tue Sep 20 15:50:55 EDT 2016) responseTime=14000ms attempts=3>>]::null>
+[15:50:55.482] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N07 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.17 timestamp=1474401055482 (Tue Sep 20 15:50:55 EDT 2016) responseTime=14000ms attempts=3>>]::null>
+[15:51:13.500] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N09 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.19 timestamp=1474401073500 (Tue Sep 20 15:51:13 EDT 2016) responseTime=14000ms attempts=3>>]::null>
+[15:51:13.500] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N09 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.19 timestamp=1474401073500 (Tue Sep 20 15:51:13 EDT 2016) responseTime=14000ms attempts=3>>]::null>
+[15:51:17.633] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP2N03 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.58.13 timestamp=1474401077633 (Tue Sep 20 15:51:17 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:51:17.633] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP2N03 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.58.13 timestamp=1474401077633 (Tue Sep 20 15:51:17 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:51:36.569] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP2S01 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.59.11 timestamp=1474401096569 (Tue Sep 20 15:51:36 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:51:36.569] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP2S01 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.59.11 timestamp=1474401096569 (Tue Sep 20 15:51:36 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:51:52.494] <nm.notifications.NotificationConfigManagerImpl.getRootPath> : root path: D:\dev\afo\nm\products\pinpoint\common\
+[15:52:35.021] <nm.reachabilityanalyzer.next.ReachabilityAnalyzerImpl.createSource> WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP3N03 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.60.13 timestamp=1474401155021 (Tue Sep 20 15:52:35 EDT 2016) responseTime=14000ms attempts=3>>]::null>
+[15:52:35.021] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP3N03 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.60.13 timestamp=1474401155021 (Tue Sep 20 15:52:35 EDT 2016) responseTime=14000ms attempts=3>>]::null>
+[15:52:54.753] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP3S05 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.61.15 timestamp=1474401174753 (Tue Sep 20 15:52:54 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:52:54.753] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP3S05 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.61.15 timestamp=1474401174753 (Tue Sep 20 15:52:54 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:52:56.954] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N01 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.10 timestamp=1474401176954 (Tue Sep 20 15:52:56 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:52:56.954] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N01 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.10 timestamp=1474401176954 (Tue Sep 20 15:52:56 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:53:22.074] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N03 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.13 timestamp=1474401202074 (Tue Sep 20 15:53:22 EDT 2016) responseTime=14000ms attempts=3>>]::null>
+[15:53:22.074] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N03 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.13 timestamp=1474401202074 (Tue Sep 20 15:53:22 EDT 2016) responseTime=14000ms attempts=3>>]::null>
+[15:54:14.241] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N02 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.12 timestamp=1474401254241 (Tue Sep 20 15:54:14 EDT 2016) responseTime=14002ms attempts=3>>]::null>
+[15:54:14.241] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N02 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.12 timestamp=1474401254241 (Tue Sep 20 15:54:14 EDT 2016) responseTime=14002ms attempts=3>>]::null>
+[15:54:52.622] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP2S04 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.59.14 timestamp=1474401292622 (Tue Sep 20 15:54:52 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:54:52.622] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP2S04 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.59.14 timestamp=1474401292622 (Tue Sep 20 15:54:52 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:54:54.343] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N08 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.18 timestamp=1474401294343 (Tue Sep 20 15:54:54 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:54:54.343] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N08 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.18 timestamp=1474401294343 (Tue Sep 20 15:54:54 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:55:02.823] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP2S03 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.59.13 timestamp=1474401302823 (Tue Sep 20 15:55:02 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:55:02.823] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP2S03 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.59.13 timestamp=1474401302823 (Tue Sep 20 15:55:02 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:56:04.340] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N10 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.20 timestamp=1474401364340 (Tue Sep 20 15:56:04 EDT 2016) responseTime=14002ms attempts=3>>]::null>
+[15:56:04.340] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N10 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.20 timestamp=1474401364340 (Tue Sep 20 15:56:04 EDT 2016) responseTime=14002ms attempts=3>>]::null>
+[15:56:36.798] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP3S01 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.61.11 timestamp=1474401396798 (Tue Sep 20 15:56:36 EDT 2016) responseTime=14002ms attempts=3>>]::null>
+[15:56:36.798] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP3S01 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.61.11 timestamp=1474401396798 (Tue Sep 20 15:56:36 EDT 2016) responseTime=14002ms attempts=3>>]::null>
+[15:56:55.084] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP2N01 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.58.11 timestamp=1474401415084 (Tue Sep 20 15:56:55 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:56:55.084] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP2N01 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.58.11 timestamp=1474401415084 (Tue Sep 20 15:56:55 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:57:02.680] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP3S04 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.61.14 timestamp=1474401422680 (Tue Sep 20 15:57:02 EDT 2016) responseTime=14000ms attempts=3>>]::null>
+[15:57:02.680] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP3S04 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.61.14 timestamp=1474401422680 (Tue Sep 20 15:57:02 EDT 2016) responseTime=14000ms attempts=3>>]::null>
+[15:57:04.131] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP3S03 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.61.13 timestamp=1474401424131 (Tue Sep 20 15:57:04 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:57:04.131] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP3S03 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.61.13 timestamp=1474401424131 (Tue Sep 20 15:57:04 EDT 2016) responseTime=14001ms attempts=3>>]::null>
+[15:57:13.714] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N04 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.14 timestamp=1474401433714 (Tue Sep 20 15:57:13 EDT 2016) responseTime=14002ms attempts=3>>]::null>
+[15:57:13.714] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N04 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.14 timestamp=1474401433714 (Tue Sep 20 15:57:13 EDT 2016) responseTime=14002ms attempts=3>>]::null>
+[15:58:17.659] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP2N02 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.58.12 timestamp=1474401497659 (Tue Sep 20 15:58:17 EDT 2016) responseTime=14002ms attempts=3>>]::null>
+[15:58:17.659] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP2N02 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.58.12 timestamp=1474401497659 (Tue Sep 20 15:58:17 EDT 2016) responseTime=14002ms attempts=3>>]::null>
+[15:58:22.048] <nm.eventlogging.EventLogger.loadConfiguration> : logger net216/#12: successful initialization of LogHandler for defaultJdbc
+[15:58:22.048] <start> : starting logger net216/#12
+[15:58:22.049] : Event Logger net216/#12 enabled
+[15:58:22.078] <nm.discovery.DiscoveryRecipeImpl.loadWAN> : wanFileVersion=3
+[15:58:22.080] <nm.model.WANImpl.readObject> : start read wan: 6169941728699613185:478789865
+[15:58:22.803] : finish read wan: 6169941728699613185:478789865
+[15:58:22.823] <irio.ClassDescriptor.getMethods> WARNING: interface com.rocketsoft.nm.model.DeviceInterface does not have method setID type long
+[15:58:22.839] <nm.model.WANImpl.setRuntimeDataConnection> : setting runtimeDataConnection to com.rocketsoft.nm.runtimedata.irio.IrioRuntimeDataConnection@1dd587e2
+[15:58:22.839] <createRuntimeRelations> : creating runtimeRelation "AvayaWLANAssociatedClientEntries" for domain net216
+[15:58:22.839] : creating runtimeRelation "AvayaWLANManagedAPEntries" for domain net216
+[15:58:22.839] : creating runtimeRelation "GeographicLocation" for domain net216
+[15:58:22.839] : creating runtimeRelation "InterfaceAdminStatus" for domain net216
+[15:58:22.839] : creating runtimeRelation "ObservedNetflows" for domain net216
+[15:58:22.840] : creating runtimeRelation "Processes" for domain net216
+[15:58:22.841] : creating runtimeRelation "TCPPorts" for domain net216
+[15:58:22.842] : creating runtimeRelation "UDPPorts" for domain net216
+[15:58:22.843] : creating runtimeRelation "VMHostVMAssociation" for domain net216
+[15:58:22.843] : creating runtimeRelation "VirtualDeviceAddresses" for domain net216
+[15:58:22.844] : creating runtimeRelation "WindowsServices2" for domain net216
+[15:58:22.844] : creating runtimeRelation "WirelessClientAssociation" for domain net216
+[15:58:22.900] <nm.acquisition.FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\net216\snmp, assumed default configuration.
+[15:58:22.901] : Configuration file acqHistory\net216\snmp\db.cfg created with timeShift22
+[15:58:22.907] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:58:22 EDT 2016
+[15:58:23.018] <nm.acquisition.snmp.SNMPAcquisitionAgentImpl.connectionToServerEstablished> : connectionToServerEstablished, mibManager=com.rocketsoft.asn1.MibManager@4342637e
+[15:58:23.018] <nm.acquisition.FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\net216\ipAvailability, assumed default configuration.
+[15:58:23.019] <AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[15:58:23.019] <FastHistoryDb$DbConfiguration.load> : Configuration file acqHistory\net216\ipAvailability\db.cfg created with timeShift22
+[15:58:23.039] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:58:23 EDT 2016
+[15:58:23.148] <nm.poll.next.IPAvailabilityAgentImpl.<init>> : Starting availability agent for net216
+[15:58:23.149] <nm.acquisition.FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\net216\syslog, assumed default configuration.
+[15:58:23.167] : Configuration file acqHistory\net216\syslog\db.cfg created with timeShift22
+[15:58:23.167] <nm.reachabilityanalyzer.next.ReachabilityAnalyzerImpl.<init>> : creating ReachabilityAnalyzer net216
+[15:58:23.241] <nm.acquisition.AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:58:23 EDT 2016
+[15:58:23.273] <nm.poll.next.ClosureHandler.populateFromStorage> : 100% devices found; 100% entrypoints found
+[15:58:23.335] <nm.acquisition.FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\net216\SystemMgmt, assumed default configuration.
+[15:58:23.336] : Configuration file acqHistory\net216\SystemMgmt\db.cfg created with timeShift22
+[15:58:23.340] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:58:23 EDT 2016
+[15:58:23.433] <FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\net216\cim, assumed default configuration.
+[15:58:23.434] : Configuration file acqHistory\net216\cim\db.cfg created with timeShift22
+[15:58:23.437] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:58:23 EDT 2016
+[15:58:23.464] <nm.mep.eval.EvalEngine.canHandleVariables> : agent snmp handles [InterfaceInformation.ifHCInOctets, InterfaceInformation.ifHCOutOctets, InterfaceInformation.ifHighSpeed, InterfaceInformation.ifInOctets, InterfaceInformation.ifSpeed, InterfaceInformation.supportsRateMetrics] but can't handle [InterfaceInformation.ifInRateExt] for category InterfaceInputUtilizationWarning but is continuing
+[15:58:23.465] : agent snmp handles [RAPID_CITY_8600_MIB_KHI_Information.rcKhiVlacpPortUpCount] but can't handle [RAPID_CITY_8600_MIB_KHI_Information.rcKhiVlacpTotalPortCount] for category RAPID_CITY_8600_MIB_rcKhiVlacpPortCountWarning but is continuing
+[15:58:23.465] : agent snmp handles [ProcessInformation.cpuTicksUsed, ProcessInformation.processId, ProcessInformation.processName, ProcessInformation.proportionalCpuUsageCalculation, ProcessInformation.summaryCpuTicksUsed] but can't handle [ProcessInformation.handleCount, ProcessInformation.parentProcessId, ProcessInformation.threadCount, ProcessInformation.virtualSize, ProcessInformation.workingSetSize] for category ProcessStatistic but is continuing
+[15:58:23.466] : agent snmp handles [FrameRelayVirtualCircuitEvent.frCircuitState] but can't handle [BecnsWarning.frCircuitReceivedBECNs] for category BecnsWarning but is continuing
+[15:58:23.466] : agent snmp handles [CpuInformation.cpuBusy] but can't handle [CpuInformation.idleCpu, CpuInformation.stolenCpu, CpuInformation.systemCpu, CpuInformation.userCpu, CpuInformation.waitCpu] for category CpuUtilizationPercent but is continuing
+[15:58:23.466] : agent snmp handles [FrameRelayVirtualCircuitEvent.frCircuitState] but can't handle [FecnsWarning.frCircuitReceivedFECNs] for category FecnsWarning but is continuing
+[15:58:23.466] : agent snmp handles [HsrpStateChange.hsrpState] but can't handle [HsrpStateChange.hsrpStateActive] for category HsrpStateChange but is continuing
+[15:58:23.466] : agent snmp handles [MemoryInformation.ioMemoryFree, MemoryInformation.ioMemoryUsed, MemoryInformation.procMemoryFree, MemoryInformation.procMemoryUsed, MemoryInformation.procMemoryUtil] but can't handle [MemoryInformation.pagedInSizePerSecond, MemoryInformation.pagedOutSizePerSecond] for category MemoryStatistic but is continuing
+[15:58:23.469] <nm.acquisition.AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[15:58:23.477] : connection to server established...
+[15:58:23.520] <nm.mep.eval.EvalEngine.canHandleVariables> : agent syslog handles [PhysicalInformation.moduleName] but can't handle [ModuleStateEvent.moduleAlarmState] for category ModuleAlarm but is continuing
+[15:58:23.520] <nm.acquisition.AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[15:58:23.520] <nm.mep.eval.EvalEngine.canHandleVariables> : agent SystemMgmt handles [MemoryInformation.pagedInSizePerSecond, MemoryInformation.pagedOutSizePerSecond, MemoryInformation.procMemoryFree, MemoryInformation.procMemoryUsed, MemoryInformation.procMemoryUtil] but can't handle [MemoryInformation.ioMemoryFree, MemoryInformation.ioMemoryUsed] for category MemoryStatistic but is continuing
+[15:58:23.545] <nm.acquisition.AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[15:58:23.545] <FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\net216\soap, assumed default configuration.
+[15:58:23.546] : Configuration file acqHistory\net216\soap\db.cfg created with timeShift22
+[15:58:23.551] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:58:23 EDT 2016
+[15:58:23.557] <nm.mep.eval.EvalEngine.canHandleVariables> : agent cim handles [MemoryInformation.availableSwapSpace] but can't handle [MemoryProblem.notificationSeverity] for category AvailableSwapSpaceTooLow but is continuing
+[15:58:23.557] : agent cim handles [MemoryInformation.procMemoryFree, MemoryInformation.procMemoryUsed, MemoryInformation.procMemoryUtil] but can't handle [MemoryInformation.ioMemoryFree, MemoryInformation.ioMemoryUsed, MemoryInformation.pagedInSizePerSecond, MemoryInformation.pagedOutSizePerSecond] for category MemoryStatistic but is continuing
+[15:58:23.641] <nm.acquisition.AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[15:58:23.642] <FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\net216\software, assumed default configuration.
+[15:58:23.643] : Configuration file acqHistory\net216\software\db.cfg created with timeShift22
+[15:58:23.649] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:58:23 EDT 2016
+[15:58:23.652] <nm.mep.eval.EvalEngine.canHandleVariables> : agent soap handles [InterfaceInformation.ifInRateExt] but can't handle [InterfaceInformation.ifHCInOctets, InterfaceInformation.ifHCOutOctets, InterfaceInformation.ifHighSpeed, InterfaceInformation.ifInOctets, InterfaceInformation.ifSpeed, InterfaceInformation.supportsRateMetrics] for category InterfaceInputUtilizationWarning but is continuing
+[15:58:23.652] : agent soap handles [CpuInformation.cpuBusy] but can't handle [CpuProblem.notificationSeverity] for category CpuUtilizationWarning but is continuing
+[15:58:23.652] : agent soap handles [MemoryInformation.procMemoryUtil] but can't handle [MemoryInformation.procMemoryFree, MemoryInformation.procMemoryUsed] for category ProcessorMemoryWarning but is continuing
+[15:58:23.653] : agent soap handles [TemperatureInformation.temperatureValue] but can't handle [TemperatureWarning.temperatureLimitHigh, TemperatureWarning.temperatureLimitLow, TemperatureWarning.temperatureState] for category TemperatureWarning but is continuing
+[15:58:23.653] : agent soap handles [CpuInformation.cpuBusy] but can't handle [CpuInformation.idleCpu, CpuInformation.stolenCpu, CpuInformation.systemCpu, CpuInformation.userCpu, CpuInformation.waitCpu] for category CpuUtilizationPercent but is continuing
+[15:58:23.653] : agent soap handles [ComputeProviderInformation.computeUtilization] but can't handle [ComputeProviderInformation.memoryFree, ComputeProviderInformation.memorySize, ComputeProviderInformation.memoryUsed, ComputeProviderInformation.memoryUtilization] for category ComputeProviderInformation but is continuing
+[15:58:23.739] <nm.acquisition.AcquisitionManagerImpl.addAgent> : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.snmp.SNMPAcquisitionAgent impl=<nm.acquisition.snmp.SNMPAcquisitionAgentImpl> host=local agentId=214>, justAdded=true, justConnected=false
+[15:58:23.740] <AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[15:58:23.744] <AcquisitionManagerImpl.addAgent> : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.snmp.SNMPAcquisitionAgent impl=<nm.acquisition.snmp.SNMPAcquisitionAgentImpl> host=local agentId=214>, justAdded=false, justConnected=true
+[15:58:23.749] : adding/updating agent: <Agent intf=com.rocketsoft.nm.poll.next.IPAvailabilityAgent impl=<nm.poll.next.IPAvailabilityAgentImpl> host=local agentId=218>, justAdded=true, justConnected=false
+[15:58:23.749] : adding/updating agent: <Agent intf=com.rocketsoft.nm.poll.next.IPAvailabilityAgent impl=<nm.poll.next.IPAvailabilityAgentImpl> host=local agentId=218>, justAdded=false, justConnected=true
+[15:58:23.749] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.syslog.SyslogAcquisitionAgent impl=<nm.acquisition.syslog.SyslogAcquisitionAgentImpl> host=local agentId=223>, justAdded=true, justConnected=false
+[15:58:23.750] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.syslog.SyslogAcquisitionAgent impl=<nm.acquisition.syslog.SyslogAcquisitionAgentImpl> host=local agentId=223>, justAdded=false, justConnected=true
+[15:58:23.751] : adding/updating agent: <Agent intf=com.rocketsoft.nm.systemmgmt.acquisition.SystemMgmtAcqAgent impl=<nm.systemmgmt.acquisition.SystemMgmtAcqAgentImpl> host=local agentId=228>, justAdded=true, justConnected=false
+[15:58:23.752] : adding/updating agent: <Agent intf=com.rocketsoft.nm.systemmgmt.acquisition.SystemMgmtAcqAgent impl=<nm.systemmgmt.acquisition.SystemMgmtAcqAgentImpl> host=local agentId=228>, justAdded=false, justConnected=true
+[15:58:23.753] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.cim.CIMAcquisitionAgent impl=<nm.acquisition.cim.CIMAcquisitionAgentImpl> host=local agentId=232>, justAdded=true, justConnected=false
+[15:58:23.755] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.cim.CIMAcquisitionAgent impl=<nm.acquisition.cim.CIMAcquisitionAgentImpl> host=local agentId=232>, justAdded=false, justConnected=true
+[15:58:23.756] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.soap.SOAPAcquisitionAgent impl=<nm.acquisition.soap.SOAPAcquisitionAgentImpl> host=local agentId=240>, justAdded=true, justConnected=false
+[15:58:23.757] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.soap.SOAPAcquisitionAgent impl=<nm.acquisition.soap.SOAPAcquisitionAgentImpl> host=local agentId=240>, justAdded=false, justConnected=true
+[15:58:23.758] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.software.SoftwareAcquisitionAgent impl=<nm.acquisition.software.SoftwareAcquisitionAgentImpl> host=local agentId=246>, justAdded=true, justConnected=false
+[15:58:23.759] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.software.SoftwareAcquisitionAgent impl=<nm.acquisition.software.SoftwareAcquisitionAgentImpl> host=local agentId=246>, justAdded=false, justConnected=true
+[15:58:36.235] <nm.poll.next.DevicePollWorker.clockStarted> : clock started
+[15:58:36.536] <nm.acquisition.snmp.SNMPAcquisitionAgentImpl.addTasksForMonitoringRequest> : no applicable AcquisitionDefinitions or NotificationDefinitions for MonitoringRequest <MonitoringRequest id=net216/Avaya SPB Data Devices/PoE Information:146 domainName=net216 pollPeriod=600000 size=1 categories=<EventCategorySet #943610992 { PowerConsumptionStatistic}>> with variables [PowerConsumptionInformation.realTimePoeSavings, PowerConsumptionInformation.realTimeSlowDownSavings] and notifications []
+[15:58:36.548] : no applicable AcquisitionDefinitions or NotificationDefinitions for MonitoringRequest <MonitoringRequest id=net216/Avaya SPB Data Devices/PoE Information:153 domainName=net216 pollPeriod=600000 size=1 categories=<EventCategorySet #1662726055 { PowerConsumptionHypercube}>> with variables [PowerConsumptionInformation.realTimePoeSavings, PowerConsumptionInformation.realTimeSlowDownSavings] and notifications []
+[15:58:37.290] : no applicable AcquisitionDefinitions or NotificationDefinitions for MonitoringRequest <MonitoringRequest id=net216/Avaya Non-SPB Data Devices/KHI Information:172 domainName=net216 pollPeriod=600000 size=2 categories=<EventCategorySet #269787087 { PowerConsumptionHypercube}>> with variables [PowerConsumptionInformation.realTimePoeSavings, PowerConsumptionInformation.realTimeSlowDownSavings] and notifications []
+[15:58:40.151] : no applicable AcquisitionDefinitions or NotificationDefinitions for MonitoringRequest <MonitoringRequest id=net216/Avaya SPB Data Devices/KHI Information:207 domainName=net216 pollPeriod=600000 size=1 categories=<EventCategorySet #475878916 { PowerConsumptionHypercube}>> with variables [PowerConsumptionInformation.realTimePoeSavings, PowerConsumptionInformation.realTimeSlowDownSavings] and notifications []
+[15:58:40.157] : no applicable AcquisitionDefinitions or NotificationDefinitions for MonitoringRequest <MonitoringRequest id=net216/Avaya Non-SPB Data Devices/PoE Information:209 domainName=net216 pollPeriod=600000 size=1 categories=<EventCategorySet #867839784 { PowerConsumptionStatistic}>> with variables [PowerConsumptionInformation.realTimePoeSavings, PowerConsumptionInformation.realTimeSlowDownSavings] and notifications []
+[15:58:40.208] : no applicable AcquisitionDefinitions or NotificationDefinitions for MonitoringRequest <MonitoringRequest id=net216/Avaya Non-SPB Data Devices/PoE Information:216 domainName=net216 pollPeriod=600000 size=1 categories=<EventCategorySet #74319264 { PowerConsumptionHypercube}>> with variables [PowerConsumptionInformation.realTimePoeSavings, PowerConsumptionInformation.realTimeSlowDownSavings] and notifications []
+[15:58:40.368] <nm.reachabilityanalyzer.next.ReachabilityAnalyzerImpl.createSource> WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N05 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.15 timestamp=1474401520368 (Tue Sep 20 15:58:40 EDT 2016) responseTime=14014ms attempts=3>>]::null>
+[15:58:40.368] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP1N05 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.57.15 timestamp=1474401520368 (Tue Sep 20 15:58:40 EDT 2016) responseTime=14014ms attempts=3>>]::null>
+[15:58:57.274] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP3N02 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.60.12 timestamp=1474401537274 (Tue Sep 20 15:58:57 EDT 2016) responseTime=14000ms attempts=3>>]::null>
+[15:58:57.274] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP3N02 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.60.12 timestamp=1474401537274 (Tue Sep 20 15:58:57 EDT 2016) responseTime=14000ms attempts=3>>]::null>
+[15:59:02.994] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP3N01 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.60.11 timestamp=1474401542994 (Tue Sep 20 15:59:02 EDT 2016) responseTime=14002ms attempts=3>>]::null>
+[15:59:02.994] WARNING: PollReport is missing monitoring ids <PollReport domainElement=WAL-N-AP3N01 pollResponses=[<PollResponse result=ICMP ping: time out details=<PollDetails address=/172.16.60.11 timestamp=1474401542994 (Tue Sep 20 15:59:02 EDT 2016) responseTime=14002ms attempts=3>>]::null>
+[2016.09.20 16:03:44.545] <core.ObjectPool.<init>> : pool of 5 HashSet elements created in com.rocketsoft.nm.acquisition.TrendsListQueryResult.<clinit>(TrendsListQueryResult.java:24)
+[16:20:48.570] <nm.discovery.SchematicBuilder.makeDeviceGroupConnections> WARNING: Device group without network devices <DeviceRedundancyGroupImpl cpdcccm>
+[16:20:51.994] WARNING: Device group without network devices DeviceGroup: [<StorageArray at <IP: 10.177.233.12>>, <StorageArray at <IP: 10.177.233.11>>, <StorageArrayRack at <IP: 127.0.0.1>>, <Server at <IP: 10.140.239.93>>]
+[16:27:26.037] <nm.acquisition.FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\Avaya27\snmp, assumed default configuration.
+[16:27:26.038] : Configuration file acqHistory\Avaya27\snmp\db.cfg created with timeShift22
+[16:27:26.042] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:27:26 EDT 2016
+[16:27:26.141] <FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\Avaya27\ipAvailability, assumed default configuration.
+[16:27:26.141] <nm.acquisition.snmp.SNMPAcquisitionAgentImpl.connectionToServerEstablished> : connectionToServerEstablished, mibManager=com.rocketsoft.asn1.MibManager@4342637e
+[16:27:26.141] <nm.acquisition.AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[16:27:26.144] <FastHistoryDb$DbConfiguration.load> : Configuration file acqHistory\Avaya27\ipAvailability\db.cfg created with timeShift22
+[16:27:26.168] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:27:26 EDT 2016
+[16:27:26.304] <nm.poll.next.IPAvailabilityAgentImpl.<init>> : Starting availability agent for Avaya27
+[16:27:26.305] <nm.acquisition.FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\Avaya27\syslog, assumed default configuration.
+[16:27:26.306] : Configuration file acqHistory\Avaya27\syslog\db.cfg created with timeShift22
+[16:27:26.310] <nm.reachabilityanalyzer.next.ReachabilityAnalyzerImpl.<init>> : creating ReachabilityAnalyzer Avaya27
+[16:27:26.415] <nm.poll.next.ClosureHandler.populateFromStorage> : 100% devices found; 100% entrypoints found
+[16:27:26.415] <nm.acquisition.AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:27:26 EDT 2016
+[16:27:26.524] <FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\Avaya27\SystemMgmt, assumed default configuration.
+[16:27:26.525] : Configuration file acqHistory\Avaya27\SystemMgmt\db.cfg created with timeShift22
+[16:27:26.525] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:27:26 EDT 2016
+[16:27:26.618] <FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\Avaya27\cim, assumed default configuration.
+[16:27:26.618] : Configuration file acqHistory\Avaya27\cim\db.cfg created with timeShift22
+[16:27:26.618] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:27:26 EDT 2016
+[16:27:26.620] <nm.mep.eval.EvalEngine.canHandleVariables> : agent snmp handles [InterfaceInformation.ifHCInOctets, InterfaceInformation.ifHCOutOctets, InterfaceInformation.ifHighSpeed, InterfaceInformation.ifInOctets, InterfaceInformation.ifSpeed, InterfaceInformation.supportsRateMetrics] but can't handle [InterfaceInformation.ifInRateExt] for category InterfaceInputUtilizationWarning but is continuing
+[16:27:26.620] : agent snmp handles [RAPID_CITY_8600_MIB_KHI_Information.rcKhiVlacpPortUpCount] but can't handle [RAPID_CITY_8600_MIB_KHI_Information.rcKhiVlacpTotalPortCount] for category RAPID_CITY_8600_MIB_rcKhiVlacpPortCountWarning but is continuing
+[16:27:26.621] : agent snmp handles [ProcessInformation.cpuTicksUsed, ProcessInformation.processId, ProcessInformation.processName, ProcessInformation.proportionalCpuUsageCalculation, ProcessInformation.summaryCpuTicksUsed] but can't handle [ProcessInformation.handleCount, ProcessInformation.parentProcessId, ProcessInformation.threadCount, ProcessInformation.virtualSize, ProcessInformation.workingSetSize] for category ProcessStatistic but is continuing
+[16:27:26.621] : agent snmp handles [FrameRelayVirtualCircuitEvent.frCircuitState] but can't handle [BecnsWarning.frCircuitReceivedBECNs] for category BecnsWarning but is continuing
+[16:27:26.622] : agent snmp handles [CpuInformation.cpuBusy] but can't handle [CpuInformation.idleCpu, CpuInformation.stolenCpu, CpuInformation.systemCpu, CpuInformation.userCpu, CpuInformation.waitCpu] for category CpuUtilizationPercent but is continuing
+[16:27:26.622] : agent snmp handles [FrameRelayVirtualCircuitEvent.frCircuitState] but can't handle [FecnsWarning.frCircuitReceivedFECNs] for category FecnsWarning but is continuing
+[16:27:26.622] : agent snmp handles [HsrpStateChange.hsrpState] but can't handle [HsrpStateChange.hsrpStateActive] for category HsrpStateChange but is continuing
+[16:27:26.622] : agent snmp handles [MemoryInformation.ioMemoryFree, MemoryInformation.ioMemoryUsed, MemoryInformation.procMemoryFree, MemoryInformation.procMemoryUsed, MemoryInformation.procMemoryUtil] but can't handle [MemoryInformation.pagedInSizePerSecond, MemoryInformation.pagedOutSizePerSecond] for category MemoryStatistic but is continuing
+[16:27:26.625] <nm.acquisition.AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[16:27:26.634] : connection to server established...
+[16:27:26.666] <nm.mep.eval.EvalEngine.canHandleVariables> : agent syslog handles [PhysicalInformation.moduleName] but can't handle [ModuleStateEvent.moduleAlarmState] for category ModuleAlarm but is continuing
+[16:27:26.666] <nm.acquisition.AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[16:27:26.666] <nm.mep.eval.EvalEngine.canHandleVariables> : agent SystemMgmt handles [MemoryInformation.pagedInSizePerSecond, MemoryInformation.pagedOutSizePerSecond, MemoryInformation.procMemoryFree, MemoryInformation.procMemoryUsed, MemoryInformation.procMemoryUtil] but can't handle [MemoryInformation.ioMemoryFree, MemoryInformation.ioMemoryUsed] for category MemoryStatistic but is continuing
+[16:27:26.723] <nm.acquisition.AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[16:27:26.724] <FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\Avaya27\soap, assumed default configuration.
+[16:27:26.724] : Configuration file acqHistory\Avaya27\soap\db.cfg created with timeShift22
+[16:27:26.724] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:27:26 EDT 2016
+[16:27:26.724] <nm.mep.eval.EvalEngine.canHandleVariables> : agent cim handles [MemoryInformation.availableSwapSpace] but can't handle [MemoryProblem.notificationSeverity] for category AvailableSwapSpaceTooLow but is continuing
+[16:27:26.786] : agent cim handles [MemoryInformation.procMemoryFree, MemoryInformation.procMemoryUsed, MemoryInformation.procMemoryUtil] but can't handle [MemoryInformation.ioMemoryFree, MemoryInformation.ioMemoryUsed, MemoryInformation.pagedInSizePerSecond, MemoryInformation.pagedOutSizePerSecond] for category MemoryStatistic but is continuing
+[16:27:26.803] <nm.acquisition.AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[16:27:26.803] <FastHistoryDb$DbConfiguration.load> : Configuration file not found in acqHistory\Avaya27\software, assumed default configuration.
+[16:27:26.804] : Configuration file acqHistory\Avaya27\software\db.cfg created with timeShift22
+[16:27:26.808] <AbstractAcquisitionAgentImpl.initialize> : first history rolloff scheduled for Wed Sep 21 00:27:26 EDT 2016
+[16:27:26.811] <nm.mep.eval.EvalEngine.canHandleVariables> : agent soap handles [InterfaceInformation.ifInRateExt] but can't handle [InterfaceInformation.ifHCInOctets, InterfaceInformation.ifHCOutOctets, InterfaceInformation.ifHighSpeed, InterfaceInformation.ifInOctets, InterfaceInformation.ifSpeed, InterfaceInformation.supportsRateMetrics] for category InterfaceInputUtilizationWarning but is continuing
+[16:27:26.812] : agent soap handles [CpuInformation.cpuBusy] but can't handle [CpuProblem.notificationSeverity] for category CpuUtilizationWarning but is continuing
+[16:27:26.812] : agent soap handles [MemoryInformation.procMemoryUtil] but can't handle [MemoryInformation.procMemoryFree, MemoryInformation.procMemoryUsed] for category ProcessorMemoryWarning but is continuing
+[16:27:26.812] : agent soap handles [TemperatureInformation.temperatureValue] but can't handle [TemperatureWarning.temperatureLimitHigh, TemperatureWarning.temperatureLimitLow, TemperatureWarning.temperatureState] for category TemperatureWarning but is continuing
+[16:27:26.812] : agent soap handles [CpuInformation.cpuBusy] but can't handle [CpuInformation.idleCpu, CpuInformation.stolenCpu, CpuInformation.systemCpu, CpuInformation.userCpu, CpuInformation.waitCpu] for category CpuUtilizationPercent but is continuing
+[16:27:26.813] : agent soap handles [ComputeProviderInformation.computeUtilization] but can't handle [ComputeProviderInformation.memoryFree, ComputeProviderInformation.memorySize, ComputeProviderInformation.memoryUsed, ComputeProviderInformation.memoryUtilization] for category ComputeProviderInformation but is continuing
+[16:27:26.898] <nm.acquisition.AcquisitionManagerImpl.addAgent> : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.snmp.SNMPAcquisitionAgent impl=<nm.acquisition.snmp.SNMPAcquisitionAgentImpl> host=local agentId=262>, justAdded=true, justConnected=false
+[16:27:26.914] <AbstractAcquisitionAgentImpl.connectionToServerEstablished> : connection to server established...
+[16:27:26.915] <AcquisitionManagerImpl.addAgent> : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.snmp.SNMPAcquisitionAgent impl=<nm.acquisition.snmp.SNMPAcquisitionAgentImpl> host=local agentId=262>, justAdded=false, justConnected=true
+[16:27:26.915] : adding/updating agent: <Agent intf=com.rocketsoft.nm.poll.next.IPAvailabilityAgent impl=<nm.poll.next.IPAvailabilityAgentImpl> host=local agentId=266>, justAdded=true, justConnected=false
+[16:27:26.915] : adding/updating agent: <Agent intf=com.rocketsoft.nm.poll.next.IPAvailabilityAgent impl=<nm.poll.next.IPAvailabilityAgentImpl> host=local agentId=266>, justAdded=false, justConnected=true
+[16:27:26.915] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.syslog.SyslogAcquisitionAgent impl=<nm.acquisition.syslog.SyslogAcquisitionAgentImpl> host=local agentId=271>, justAdded=true, justConnected=false
+[16:27:26.915] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.syslog.SyslogAcquisitionAgent impl=<nm.acquisition.syslog.SyslogAcquisitionAgentImpl> host=local agentId=271>, justAdded=false, justConnected=true
+[16:27:27.002] : adding/updating agent: <Agent intf=com.rocketsoft.nm.systemmgmt.acquisition.SystemMgmtAcqAgent impl=<nm.systemmgmt.acquisition.SystemMgmtAcqAgentImpl> host=local agentId=276>, justAdded=true, justConnected=false
+[16:27:27.004] : adding/updating agent: <Agent intf=com.rocketsoft.nm.systemmgmt.acquisition.SystemMgmtAcqAgent impl=<nm.systemmgmt.acquisition.SystemMgmtAcqAgentImpl> host=local agentId=276>, justAdded=false, justConnected=true
+[16:27:27.005] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.cim.CIMAcquisitionAgent impl=<nm.acquisition.cim.CIMAcquisitionAgentImpl> host=local agentId=280>, justAdded=true, justConnected=false
+[16:27:27.006] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.cim.CIMAcquisitionAgent impl=<nm.acquisition.cim.CIMAcquisitionAgentImpl> host=local agentId=280>, justAdded=false, justConnected=true
+[16:27:27.008] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.soap.SOAPAcquisitionAgent impl=<nm.acquisition.soap.SOAPAcquisitionAgentImpl> host=local agentId=288>, justAdded=true, justConnected=false
+[16:27:27.010] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.soap.SOAPAcquisitionAgent impl=<nm.acquisition.soap.SOAPAcquisitionAgentImpl> host=local agentId=288>, justAdded=false, justConnected=true
+[16:27:27.011] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.software.SoftwareAcquisitionAgent impl=<nm.acquisition.software.SoftwareAcquisitionAgentImpl> host=local agentId=294>, justAdded=true, justConnected=false
+[16:27:27.012] : adding/updating agent: <Agent intf=com.rocketsoft.nm.acquisition.software.SoftwareAcquisitionAgent impl=<nm.acquisition.software.SoftwareAcquisitionAgentImpl> host=local agentId=294>, justAdded=false, justConnected=true
+[16:27:37.055] <nm.poll.next.DevicePollWorker.clockStarted> : clock started
+[16:27:40.841] <nm.acquisition.snmp.SNMPAcquisitionAgentImpl.addTasksForMonitoringRequest> : no applicable AcquisitionDefinitions or NotificationDefinitions for MonitoringRequest <MonitoringRequest id=Avaya27/Avaya Non-SPB Data Devices/KHI Information:303 domainName=Avaya27 pollPeriod=600000 size=1 categories=<EventCategorySet #1455091106 { PowerConsumptionHypercube}>> with variables [PowerConsumptionInformation.realTimePoeSavings, PowerConsumptionInformation.realTimeSlowDownSavings] and notifications []
+[16:27:46.377] : no applicable AcquisitionDefinitions or NotificationDefinitions for MonitoringRequest <MonitoringRequest id=Avaya27/Avaya Non-SPB Data Devices/PoE Information:352 domainName=Avaya27 pollPeriod=600000 size=1 categories=<EventCategorySet #395292405 { PowerConsumptionStatistic}>> with variables [PowerConsumptionInformation.realTimePoeSavings, PowerConsumptionInformation.realTimeSlowDownSavings] and notifications []
+[16:27:46.418] : no applicable AcquisitionDefinitions or NotificationDefinitions for MonitoringRequest <MonitoringRequest id=Avaya27/Avaya Non-SPB Data Devices/PoE Information:359 domainName=Avaya27 pollPeriod=600000 size=1 categories=<EventCategorySet #1506647779 { PowerConsumptionHypercube}>> with variables [PowerConsumptionInformation.realTimePoeSavings, PowerConsumptionInformation.realTimeSlowDownSavings] and notifications []
+[16:31:03.139] <nm.acquisition.cim.CIMAcquisitionAgentImpl$CIMMethod.execute> WARNING: java.net.ConnectException: Connection timed out: connect
+[16:31:03.141] WARNING: java.net.ConnectException: Connection timed out: connect
+[16:31:03.141] WARNING: java.net.ConnectException: Connection timed out: connect
+[16:33:46.113] WARNING: java.net.ConnectException: Connection timed out: connect
+[16:33:46.113] WARNING: java.net.ConnectException: Connection timed out: connect
+[16:33:46.113] WARNING: java.net.ConnectException: Connection timed out: connect
+[16:34:59.258] WARNING: java.net.ConnectException: Connection timed out: connect
+[16:34:59.258] WARNING: java.net.ConnectException: Connection timed out: connect
+[16:34:59.258] WARNING: java.net.ConnectException: Connection timed out: connect
+[16:35:30.704] WARNING: java.net.ConnectException: Connection timed out: connect
+[16:35:30.704] WARNING: java.net.ConnectException: Connection timed out: connect
+[16:35:30.704] WARNING: java.net.ConnectException: Connection timed out: connect
+[16:35:33.370] WARNING: java.net.ConnectException: Connection timed out: connect
+[16:35:33.370] WARNING: java.net.ConnectException: Connection timed out: connect
+[16:35:33.370] WARNING: java.net.ConnectException: Connection timed out: connect
+[16:47:26.638] <nm.nortel.vpfm.licensing.NortelLicenseExpirationMonitor.warningLoop> WARNING: License expires in 4 days and 2 hours.
+[16:54:55.765] <nm.acquisition.snmp.SNMPAcquisitionAgentImpl$ScheduledSNMPTask.taskCompleted> : timeout now 14278 for task <SetUpdatingSNMPTask id=902; address=<IP: 10.10.254.98>; getter=<TableGetter 159358407 ;prefix=.iso.org.dod.internet.mgmt.mib-2.interfaces.ifTable.ifEntry.; oids=ifIndex, ifAdminStatus, ifOperStatus>; oidTail=null; relation=InterfaceAdminStatus>
+[16:55:39.925] : timeout now 10480 for task <ScheduledSNMPTask id=381; address=<IP: 10.10.254.98>; getter=<TableGetter 1767521883 ;prefix=.iso.org.dod.internet.private.enterprises.cisco.ciscoMgmt.ciscoEntityFRUControlMIB.cefcMIBObjects.cefcModule.cefcModuleTable.cefcModuleEntry.; oids=cefcModuleAdminStatus, cefcModuleOperStatus>; oidTail=null; vars=[ModuleStateEvent.ciscoFruAdminState(0), ModuleStateEvent.ciscoFruOperState(1)]>
+[16:55:55.143] : timeout now 10515 for task <ScheduledSNMPTask id=189; address=<IP: 10.10.254.98>; getter=<TableGetter 1493756373 ;prefix=.iso.org.dod.internet.private.enterprises.cisco.ciscoMgmt.ciscoMemoryPoolMIB.ciscoMemoryPoolObjects.ciscoMemoryPoolTable.ciscoMemoryPoolEntry.; oids=ciscoMemoryPoolLargestFree, ciscoMemoryPoolUsed, ciscoMemoryPoolFree>; oidTail=null; vars=[MemoryInformation.memoryPoolLargestFree(0)]>
+[16:56:27.048] : timeout now 24197 for task <ScheduledSNMPTask id=813; address=<IP: 10.10.254.98>; getter=<TableGetter 1790416234 ;prefix=.iso.org.dod.internet.mgmt.mib-2.interfaces.ifTable.ifEntry.; oids=ifSpeed, ifInOctets, ifInUcastPkts, ifInNUcastPkts, ifInErrors, ifInDiscards, ifInUnknownProtos, ifOutOctets, ifOutUcastPkts, ifOutNUcastPkts, ifOutErrors, ifOutDiscards, ifOutQLen>; oidTail=null; vars=[InterfaceInformation.ifSpeed(0), InterfaceInformation.ifInOctets(1), InterfaceInformation.ifInUcastPkts(2), InterfaceInformation.ifInNUcastPkts(3), InterfaceInformation.ifInErrors(4), InterfaceInformation.ifInDiscards(5), InterfaceInformation.ifInUnknownProtos(6), InterfaceInformation.ifOutOctets(7), InterfaceInformation.ifOutUcastPkts(8), InterfaceInformation.ifOutNUcastPkts(9), InterfaceInformation.ifOutErrors(10), InterfaceInformation.ifOutDiscards(11), InterfaceInformation.ifOutQLen(12)]>
+[16:57:10.045] : timeout now 10150 for task <ScheduledSNMPTask id=729; address=<IP: 10.10.254.98>; getter=<MultipleGetter 565966581; oids=.iso.org.dod.internet.mgmt.mib-2.tcp.tcpOutSegs, .iso.org.dod.internet.mgmt.mib-2.tcp.tcpRetransSegs>; oidTail=null; vars=[TcpDeviceInformation.tcpOutSegs(0), TcpDeviceInformation.tcpRetransSegs(1)]>
+[16:57:21.677] : timeout now 11053 for task <ScheduledSNMPTask id=383; address=<IP: 10.10.254.98>; getter=<TableGetter 624434693 ;prefix=.iso.org.dod.internet.private.enterprises.cisco.ciscoMgmt.ciscoEnvMonMIB.ciscoEnvMonObjects.ciscoEnvMonTemperatureStatusTable.ciscoEnvMonTemperatureStatusEntry.; oids=ciscoEnvMonTemperatureStatusValue, ciscoEnvMonTemperatureThreshold, ciscoEnvMonTemperatureState>; oidTail=null; vars=[TemperatureInformation.temperatureValue(0), TemperatureWarning.temperatureLimitHigh(1), TemperatureWarning.ciscoTemperatureState(2)]>
+[16:57:29.095] : timeout now 10149 for task <ScheduledSNMPTask id=618; address=<IP: 10.10.254.98>; getter=<MultipleGetter 1993296295; oids=.iso.org.dod.internet.mgmt.mib-2.dot1dBridge.qBridgeMIB.qBridgeMIBObjects.dot1qVlan.dot1qVlanNumDeletes>; oidTail=null; vars=[BridgeVlanDeleteCount.dot1qVlanNumDeletes(0)]>
+[16:57:44.862] : timeout now 10150 for task <ScheduledSNMPTask id=188; address=<IP: 10.10.254.98>; getter=<TableGetter 2132614348 ;prefix=.iso.org.dod.internet.private.enterprises.cisco.ciscoMgmt.ciscoProcessMIB.ciscoProcessMIBObjects.cpmCPU.cpmCPUTotalTable.cpmCPUTotalEntry.; oids=cpmCPUTotal5minRev>; oidTail=null; vars=[CpuInformation.cpuBusy(0)]>
+[16:58:51.089] : timeout now 10151 for task <ScheduledSNMPTask id=684; address=<IP: 10.10.254.98>; getter=<MultipleGetter 105557826; oids=.iso.org.dod.internet.mgmt.mib-2.dot1dBridge.dot1dBase.dot1dBaseNumPorts>; oidTail=null; vars=[BridgeInformation.dot1dBaseNumPorts(0)]>
+[2016.09.20 17:00:08.075] : timeout now 10150 for task <ScheduledSNMPTask id=617; address=<IP: 10.10.254.98>; getter=<MultipleGetter 2135036017; oids=.iso.org.dod.internet.mgmt.mib-2.dot1dBridge.qBridgeMIB.qBridgeMIBObjects.dot1qBase.dot1qNumVlans>; oidTail=null; vars=[BridgeVlanCount.dot1qNumVlans(0)]>
+[17:01:08.485] : timeout now 10332 for task <ScheduledSNMPTask id=190; address=<IP: 10.10.254.98>; getter=<TableGetter 1047624905 ;prefix=.iso.org.dod.internet.private.enterprises.cisco.ciscoMgmt.ciscoMemoryPoolMIB.ciscoMemoryPoolObjects.ciscoMemoryPoolTable.ciscoMemoryPoolEntry.; oids=ciscoMemoryPoolUsed, ciscoMemoryPoolFree>; oidTail=null; vars=[MemoryInformation.ioMemoryUsed(0), MemoryInformation.ioMemoryFree(1)]>
+[17:01:53.827] : timeout now 20718 for task <ScheduledSNMPTask id=814; address=<IP: 10.10.254.98>; getter=<TableGetter 666689361 ;prefix=.iso.org.dod.internet.mgmt.mib-2.ifMIB.ifMIBObjects.ifXTable.ifXEntry.; oids=ifHighSpeed, ifHCInOctets, ifHCOutOctets, ifHCInUcastPkts, ifHCOutUcastPkts, ifHCInMulticastPkts, ifHCOutMulticastPkts, ifHCInBroadcastPkts, ifHCOutBroadcastPkts>; oidTail=null; vars=[InterfaceInformation.ifHighSpeed(0), InterfaceInformation.ifHCInOctets(1), InterfaceInformation.ifHCOutOctets(2), InterfaceInformation.ifHCInUcastPkts(3), InterfaceInformation.ifHCOutUcastPkts(4), InterfaceInformation.ifHCInMulticastPkts(5), InterfaceInformation.ifHCOutMulticastPkts(6), InterfaceInformation.ifHCInBroadcastPkts(7), InterfaceInformation.ifHCOutBroadcastPkts(8)]>
+[17:02:54.792] : timeout now 10150 for task <ScheduledSNMPTask id=380; address=<IP: 10.10.254.98>; getter=<TableGetter 650423626 ;prefix=.iso.org.dod.internet.private.enterprises.cisco.ciscoMgmt.ciscoEnvMonMIB.ciscoEnvMonObjects.ciscoEnvMonFanStatusTable.ciscoEnvMonFanStatusEntry.; oids=ciscoEnvMonFanState>; oidTail=null; vars=[FanWarning.ciscoFanState(0)]>
+[17:03:47.018] : timeout now 10151 for task <ScheduledSNMPTask id=683; address=<IP: 10.10.254.98>; getter=<MultipleGetter 39951636; oids=.iso.org.dod.internet.mgmt.mib-2.dot1dBridge.dot1dStp.dot1dStpTopChanges>; oidTail=null; vars=[BridgeInformation.dot1dStpTopChanges(0)]>
+[17:03:57.512] : timeout now 10150 for task <ScheduledSNMPTask id=520; address=<IP: 10.10.254.98>; getter=<MultipleGetter 236110270; oids=.iso.org.dod.internet.mgmt.mib-2.system.sysUpTime>; oidTail=null; vars=[DeviceUptimeStatistics.uptimeInCentisecs(0)]>
+[17:04:16.186] <SNMPAcquisitionAgentImpl.addTasksForMonitoringRequest> : no applicable AcquisitionDefinitions or NotificationDefinitions for MonitoringRequest <MonitoringRequest id=WalthamWithVHVM/Non-Avaya Servers/KHI Information:389 domainName=WalthamWithVHVM pollPeriod=600000 size=4 categories=<EventCategorySet #1569185261 { PowerConsumptionHypercube}>> with variables [PowerConsumptionInformation.realTimePoeSavings, PowerConsumptionInformation.realTimeSlowDownSavings] and notifications []
+[17:04:18.540] <SNMPAcquisitionAgentImpl$ScheduledSNMPTask.taskCompleted> : timeout now 10151 for task <ScheduledSNMPTask id=379; address=<IP: 10.10.254.98>; getter=<TableGetter 169081970 ;prefix=.iso.org.dod.internet.private.enterprises.cisco.ciscoMgmt.ciscoEnvMonMIB.ciscoEnvMonObjects.ciscoEnvMonSupplyStatusTable.ciscoEnvMonSupplyStatusEntry.; oids=ciscoEnvMonSupplyState>; oidTail=null; vars=[EnvironmentalEvent.ciscoEnvMonState(0)]>
+[17:04:24.707] <core.ObjectPool.<init>> : pool of 10 HeapRef elements created in com.rocketsoft.rpc.dce.BinaryCIMParser.<clinit>(BinaryCIMParser.java:102)
+[17:04:24.709] : pool of 10 HeapItem elements created in com.rocketsoft.rpc.dce.BinaryCIMParser.<clinit>(BinaryCIMParser.java:118)
+[17:04:24.713] : pool of 40 CIMProperty elements created in com.rocketsoft.cim.cim.CIMResultImpl.<clinit>(CIMResultImpl.java:93)
+[17:06:15.933] <soap.DocumentUtils.readDefinition> : Loading WSDL from <FilesystemXMLDataSource d:\dev\afo\nm\products\pinpoint\common\.\wsdl\vim25>
+[17:06:16.435] <WSDLManager.getDefinition> : WSDL cache contains 1 entries
+[17:08:02.794] <nm.acquisition.cim.CIMAcquisitionAgentImpl$CIMMethod.execute> WARNING: <ErrorCode 0x80041017 WBEM_E_INVALID_QUERY: Query was not syntactically valid or was too complex.> with 'select PercentIdleTime, PercentInterruptTime, PercentPrivilegedTime, PercentProcessorTime, PercentUserTime from Win32_PerfFormattedData_PerfOS_Processor where Name = '_Total'' on ams-vm-orlon.rocketsoftware.com/10.15.28.106 version 6.0
+[17:08:02.810] WARNING: <ErrorCode 0x80041017 WBEM_E_INVALID_QUERY: Query was not syntactically valid or was too complex.> with 'select AvailableBytes, PagesInputPersec from Win32_PerfFormattedData_PerfOS_Memory' on ams-vm-orlon.rocketsoftware.com/10.15.28.106 version 6.0
+[17:12:55.042] WARNING: <ErrorCode 0x80041017 WBEM_E_INVALID_QUERY: Query was not syntactically valid or was too complex.> with 'select PercentIdleTime, PercentInterruptTime, PercentPrivilegedTime, PercentProcessorTime, PercentUserTime from Win32_PerfFormattedData_PerfOS_Processor where Name = '_Total'' on wal-vm-tepkrn01.rocketsoftware.com/10.17.4.116 version 6.0
+[17:12:55.046] WARNING: <ErrorCode 0x80041017 WBEM_E_INVALID_QUERY: Query was not syntactically valid or was too complex.> with 'select AvailableBytes, PagesInputPersec from Win32_PerfFormattedData_PerfOS_Memory' on wal-vm-tepkrn01.rocketsoftware.com/10.17.4.116 version 6.0
+[17:17:33.946] <nm.systemmgmt.acquisition.SystemMgmtAcquisitionTask.run> : skipping first consecutive run for com.rocketsoft.nm.systemmgmt.acquisition.SystemMgmtAcquisitionTask@11b888c4[ser=6339 name="System Mgmt Acquisition Task" run=this pri=5 cyc=600000 start=1474406853946 expect=-1 cncl=false], cycleTime = 600000
+[17:36:15.611] <denali.agents.Agents.mapAddress> : Mapping remote rmiServerHost 10.18.99.179 to 10.5.0.91
+[17:36:15.611] : Mapping remote rmiServerHost 172.16.67.136 to 10.17.24.26
+[17:36:15.611] : Mapping remote rmiServerHost 172.16.67.137 to 10.17.24.41
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.72.96 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.105.247.214 to 172.16.61.38
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.72.93 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.72.94 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.72.91 to 10.7.65.16
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.99.37 to 10.7.65.16
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.71.134 to 10.7.65.16
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.71.137 to 10.7.65.22
+[17:36:15.611] : Mapping remote rmiServerHost 172.16.67.138 to 10.17.24.39
+[17:36:15.611] : Mapping remote rmiServerHost 172.16.39.24 to 172.16.54.112
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.99.46 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.105.246.109 to 172.16.61.38
+[17:36:15.611] : Mapping remote rmiServerHost 135.105.242.203 to 172.16.61.38
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.71.220 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 10.0.1.4 to 10.18.98.32
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.98.115 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 10.0.1.13 to 10.18.99.5
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.98.82 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.105.246.217 to 172.16.61.38
+[17:36:15.611] : Mapping remote rmiServerHost 10.18.98.5 to 10.18.99.239
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.98.208 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.105.246.115 to 172.16.61.38
+[17:36:15.611] : Mapping remote rmiServerHost 135.105.246.119 to 172.16.61.38
+[17:36:15.611] : Mapping remote rmiServerHost 135.105.242.94 to 172.16.61.38
+[17:36:15.611] : Mapping remote rmiServerHost fe80:0:0:0:44c3:db06:7543:261a%10 to 172.16.55.104
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.72.63 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.98.105 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.98.102 to 10.7.65.16
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.99.24 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 192.168.56.1 to 172.16.61.23
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.98.98 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.71.241 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.71.107 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.98.133 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.98.135 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 172.16.67.239 to 10.17.27.31
+[17:36:15.611] : Mapping remote rmiServerHost 169.254.136.121 to 10.15.32.217
+[17:36:15.611] : Mapping remote rmiServerHost 192.168.1.145 to 172.16.61.118
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.99.80 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.99.86 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.98.77 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.105.246.149 to 172.16.61.38
+[17:36:15.611] : Mapping remote rmiServerHost 10.18.98.31 to 10.18.99.201
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.98.254 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.98.152 to 10.7.65.14
+[17:36:15.611] : Mapping remote rmiServerHost 135.105.246.152 to 172.16.61.38
+[17:36:15.611] : Mapping remote rmiServerHost 135.105.246.155 to 172.16.61.38
+[17:36:15.611] : Mapping remote rmiServerHost 135.105.247.206 to 172.16.61.38
+[17:36:15.611] : Mapping remote rmiServerHost fe80:0:0:0:20c:29ff:fe07:2145%2 to 10.7.4.47
+[17:36:15.611] : Mapping remote rmiServerHost 135.123.71.205 to 10.7.65.16
+[17:36:15.647] : Mapping remote rmiServerHost 135.105.246.178 to 172.16.61.38
+[17:36:15.647] : Mapping remote rmiServerHost 135.105.242.49 to 172.16.61.38
+[17:36:15.647] : Mapping remote rmiServerHost 172.16.39.9 to 172.16.52.94
+[17:36:15.647] : Mapping remote rmiServerHost 135.123.71.83 to 10.7.65.14
+[17:36:15.647] : Mapping remote rmiServerHost 135.105.243.177 to 172.16.61.38
+[17:36:15.647] : Mapping remote rmiServerHost 135.123.98.32 to 10.7.65.14
+[17:36:15.647] : Mapping remote rmiServerHost 135.123.71.69 to 10.7.65.14
+[17:36:15.647] : Mapping remote rmiServerHost fe80:0:0:0:1c0c:317:d3dc:4c16%11 to 10.18.99.219
+[17:36:15.647] : Mapping remote rmiServerHost 135.105.242.37 to 172.16.61.38
+[17:36:15.647] : Mapping remote rmiServerHost 135.123.72.124 to 10.7.65.14
+[17:36:15.647] : Mapping remote rmiServerHost 135.105.246.195 to 172.16.61.38
+[17:36:15.647] : Mapping remote rmiServerHost 135.105.246.197 to 172.16.61.38
+[17:36:15.647] : Mapping remote rmiServerHost 135.105.242.21 to 172.16.61.38
+[17:36:15.647] : Mapping remote rmiServerHost 135.105.242.24 to 172.16.61.38
+[17:36:15.648] : Mapping remote rmiServerHost 9.236.241.217 to 10.18.98.26
+[17:36:15.648] : Mapping remote rmiServerHost 135.123.71.60 to 10.7.65.16
+[17:36:15.648] : Mapping remote rmiServerHost 172.16.39.206 to 10.5.35.19
+[17:36:15.648] : Mapping remote rmiServerHost 135.123.98.190 to 10.7.65.14
+[17:36:15.648] : Mapping remote rmiServerHost 135.123.71.191 to 10.7.65.14
+[17:36:15.648] : Mapping remote rmiServerHost 135.123.71.68 to 10.7.65.14
+[17:36:15.648] : Mapping remote rmiServerHost 135.105.246.99 to 172.16.61.38
+[17:36:15.648] : Mapping remote rmiServerHost 135.105.246.96 to 172.16.61.38
+[17:36:15.648] : Mapping remote rmiServerHost 135.105.242.16 to 172.16.61.38
+[17:36:15.648] : Mapping remote rmiServerHost 135.123.99.116 to 10.7.65.16
+[17:36:15.648] : Mapping remote rmiServerHost 135.123.99.107 to 10.7.65.14
+[17:36:15.648] : Mapping remote rmiServerHost 135.123.98.181 to 10.7.65.14
+[17:36:15.648] : Mapping remote rmiServerHost 10.17.27.54 to 169.254.100.182
+[17:36:15.648] : Mapping remote rmiServerHost 192.168.1.74 to 172.16.52.86
+[17:36:15.648] : Mapping remote rmiServerHost 10.37.25.193 to 172.16.52.151
+[17:36:15.648] : Mapping remote rmiServerHost 135.105.242.89 to 172.16.61.38
+[17:36:15.648] : Mapping remote rmiServerHost 135.105.246.80 to 172.16.61.38
+[17:36:15.648] : Mapping remote rmiServerHost 135.123.71.39 to 10.7.65.14
+[17:36:15.648] : Mapping remote rmiServerHost 135.123.71.46 to 10.7.65.14
+[17:36:15.648] : Mapping remote rmiServerHost 135.105.247.125 to 172.16.61.38
+[17:36:15.648] : Mapping remote rmiServerHost 135.123.71.43 to 10.7.65.14
+[17:36:15.649] : Mapping remote rmiServerHost 192.168.1.66 to 10.18.99.73
+[17:36:15.649] : Mapping remote rmiServerHost 135.123.99.229 to 10.7.65.22
+[17:36:15.649] : Mapping remote rmiServerHost 135.105.243.144 to 172.16.61.38
+[17:36:15.649] : Mapping remote rmiServerHost 135.123.71.31 to 10.7.65.14
+[17:36:15.649] : Mapping remote rmiServerHost 169.254.26.78 to 10.18.98.69
+[17:36:15.649] : Mapping remote rmiServerHost 135.123.71.152 to 10.7.65.16
+[17:36:15.649] : Mapping remote rmiServerHost 135.123.71.20 to 10.7.65.14
+[17:36:15.649] : Mapping remote rmiServerHost 192.168.0.103 to 10.7.19.111
+[17:36:15.649] : Mapping remote rmiServerHost 135.123.99.202 to 10.7.65.14
+[17:36:15.649] : Mapping remote rmiServerHost 192.168.0.102 to 10.18.98.101
+[17:36:15.649] : Mapping remote rmiServerHost 192.168.0.104 to 10.7.20.62
+[17:36:15.649] : Mapping remote rmiServerHost 172.16.67.156 to 10.17.24.38
+[17:36:15.649] : Mapping remote rmiServerHost 172.16.39.230 to 172.16.54.112
+[17:36:15.649] : Mapping remote rmiServerHost 192.168.90.150 to 10.49.5.43
+[17:36:15.649] : Mapping remote rmiServerHost 135.105.242.55 to 10.17.24.35
+[17:36:15.649] : Mapping remote rmiServerHost 135.105.246.55 to 172.16.61.38
+[17:36:15.649] : Mapping remote rmiServerHost 135.123.99.211 to 10.7.65.14
+[17:36:15.649] : Mapping remote rmiServerHost 172.16.67.144 to 10.17.24.52
+[17:36:15.649] : Mapping remote rmiServerHost fe80:0:0:0:0:100:7f:fffe%11 to 10.5.35.19
+[17:36:15.808] : Mapping remote rmiServerHost 135.105.243.87 to 172.16.61.38
+[17:36:15.808] : Mapping remote rmiServerHost 135.105.243.246 to 172.16.61.38
+[17:36:15.808] : Mapping remote rmiServerHost 192.168.249.1 to 10.5.0.91
+[17:36:15.808] : Mapping remote rmiServerHost 135.123.99.155 to 10.7.65.16
+[17:36:15.808] : Mapping remote rmiServerHost 135.105.243.91 to 172.16.61.38
+[17:36:15.808] : Mapping remote rmiServerHost 135.105.243.232 to 172.16.61.38
+[17:36:15.808] : Mapping remote rmiServerHost 135.123.99.141 to 10.7.65.14
+[17:36:15.808] : Mapping remote rmiServerHost 135.105.246.44 to 172.16.61.38
+[17:36:15.808] : Mapping remote rmiServerHost 135.105.246.41 to 172.16.61.38
+[17:36:15.808] : Mapping remote rmiServerHost 135.105.243.61 to 172.16.61.38
+[17:36:15.808] : Mapping remote rmiServerHost 135.105.243.123 to 172.16.61.38
+[17:36:15.808] : Mapping remote rmiServerHost 135.123.99.131 to 10.7.65.14
+[17:36:15.808] : Mapping remote rmiServerHost fe80:0:0:0:2d3d:98d5:3d8b:81af%11 to 172.16.52.208
+[17:36:15.809] : Mapping remote rmiServerHost 10.17.27.31 to 10.17.24.29
+[17:36:15.809] : Mapping remote rmiServerHost 135.105.243.119 to 172.16.61.38
+[17:36:15.809] : Mapping remote rmiServerHost 135.105.243.210 to 10.7.4.51
+[17:36:15.809] : Mapping remote rmiServerHost 172.20.14.156 to 172.16.39.197
+[17:36:15.809] : Mapping remote rmiServerHost 135.105.247.1 to 172.16.61.38
+[17:36:15.809] : Mapping remote rmiServerHost fe80:0:0:0:0:0:0:1%1 to 10.7.4.87
+[17:36:15.809] : Mapping remote rmiServerHost 172.16.55.5 to 172.16.61.118
+[17:36:15.809] : Mapping remote rmiServerHost 135.105.242.198 to 172.16.61.38
+[17:36:15.809] : Mapping remote rmiServerHost 172.20.14.89 to 172.16.52.86
+[17:36:15.809] : Mapping remote rmiServerHost 135.105.243.208 to 172.16.61.38
+[17:36:15.809] : Mapping remote rmiServerHost 135.123.99.198 to 10.7.65.16
+[17:36:15.809] : Mapping remote rmiServerHost 135.123.99.197 to 10.7.65.14
+[17:36:15.809] : Mapping remote rmiServerHost 135.105.242.191 to 172.16.61.38
+[17:36:15.809] : Mapping remote rmiServerHost 135.123.99.190 to 10.7.65.14
+[17:36:15.809] : Mapping remote rmiServerHost 135.105.242.188 to 10.7.4.51
+[17:36:15.809] : Mapping remote rmiServerHost 10.1.0.173 to 10.18.98.26
+[17:36:15.809] : Mapping remote rmiServerHost 135.123.71.96 to 10.7.65.14
+[17:36:15.809] : Mapping remote rmiServerHost 135.105.242.145 to 172.16.61.38
+[17:36:15.810] : Mapping remote rmiServerHost 135.105.247.188 to 172.16.61.38
+[17:36:15.810] : Mapping remote rmiServerHost 192.168.1.102 to 10.18.98.32
+[17:36:15.810] : Mapping remote rmiServerHost 192.168.1.103 to 10.18.98.131
+[17:36:15.810] : Mapping remote rmiServerHost 172.16.67.49 to 10.17.24.51
+[17:36:15.810] : Mapping remote rmiServerHost 135.123.99.94 to 10.7.65.16
+[17:36:15.810] : Mapping remote rmiServerHost 135.105.242.133 to 172.16.61.38
+[17:36:15.810] : Mapping remote rmiServerHost 135.105.247.178 to 172.16.61.38
+[17:36:15.810] : Mapping remote rmiServerHost 135.105.247.68 to 172.16.61.38
+[17:36:15.810] : Mapping remote rmiServerHost 135.105.247.179 to 172.16.61.38
+[17:36:15.810] : Mapping remote rmiServerHost 135.105.247.174 to 172.16.61.38
+[17:36:15.810] : Mapping remote rmiServerHost 135.105.242.142 to 172.16.61.38
+[17:36:15.810] : Mapping remote rmiServerHost 172.16.80.137 to 10.31.5.44
+[17:36:15.810] : Mapping remote rmiServerHost 135.105.242.170 to 172.16.61.38
+[17:36:15.810] : Mapping remote rmiServerHost 10.5.2.234 to 10.5.2.236
+[17:36:15.810] : Mapping remote rmiServerHost 135.105.242.172 to 172.16.61.38
+[17:36:15.810] : Mapping remote rmiServerHost 135.105.242.159 to 172.16.61.38
+[17:36:15.810] : Mapping remote rmiServerHost fe80:0:0:0:250:56ff:fea0:42f2%2 to 10.17.24.73
+[17:36:15.810] : Mapping remote rmiServerHost 135.105.242.249 to 172.16.61.38
+[17:36:15.810] : Mapping remote rmiServerHost 135.105.247.149 to 172.16.61.38
+[17:36:15.811] : Mapping remote rmiServerHost 135.123.72.47 to 10.7.65.14
+[17:36:15.811] : Mapping remote rmiServerHost 135.105.247.146 to 172.16.61.38
+[17:36:15.941] : Mapping remote rmiServerHost 135.105.247.144 to 172.16.61.38
+[17:36:15.941] : Mapping remote rmiServerHost 135.105.242.233 to 172.16.61.38
+[17:36:15.941] : Mapping remote rmiServerHost 10.7.4.63 to 10.7.4.91
+[17:36:15.941] : Mapping remote rmiServerHost 10.7.4.57 to 10.7.4.79
+[17:36:15.941] : Mapping remote rmiServerHost 135.105.247.130 to 172.16.61.38
+[17:36:15.941] : Mapping remote rmiServerHost 135.105.246.209 to 172.16.61.38
+[17:36:15.941] : Mapping remote rmiServerHost 135.105.242.226 to 172.16.61.38
+[17:36:15.941] : Mapping remote rmiServerHost 135.105.243.27 to 172.16.61.38
+[17:36:15.941] : Mapping remote rmiServerHost 10.7.4.75 to 169.254.14.159
+[17:36:15.941] : Mapping remote rmiServerHost 135.105.243.23 to 172.16.61.38
+[17:36:15.941] : Mapping remote rmiServerHost 135.105.243.21 to 172.16.61.38
+[17:36:15.941] : Mapping remote rmiServerHost 135.105.247.168 to 172.16.61.38
+[17:36:15.941] : Mapping remote rmiServerHost 135.123.72.22 to 10.7.65.14
+[17:36:15.941] : Mapping remote rmiServerHost 135.105.242.216 to 172.16.61.38
+[17:36:15.942] : Mapping remote rmiServerHost 135.105.243.37 to 172.16.61.38
+[17:36:15.942] : Mapping remote rmiServerHost 135.105.246.4 to 172.16.61.38
+[17:36:15.942] : Mapping remote rmiServerHost 135.105.243.35 to 172.16.61.38
+[17:36:15.942] : Mapping remote rmiServerHost 135.105.247.254 to 172.16.61.38
+[17:36:15.942] : Mapping remote rmiServerHost 135.105.242.120 to 172.16.61.38
+[17:36:15.942] : Mapping remote rmiServerHost 135.105.242.8 to 172.16.61.38
+[17:49:26.596] <nm.nortel.vpfm.licensing.NortelLicenseExpirationMonitor.warningLoop> WARNING: License expires in 4 days and 1 hours.
+[17:50:18.128] <nm.systemmgmt.acquisition.SystemMgmtAcquisitionTask.runInternal> WARNING: Failed to get data from systemmgmt for <Server at sg-lab3.servergraph.net@<IP: 10.17.17.40>>
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:453)
+	at java.lang.Long.parseLong(Long.java:483)
+	at java.text.DigitList.getLong(DigitList.java:194)
+	at java.text.DecimalFormat.parse(DecimalFormat.java:1316)
+	at java.text.NumberFormat.parseObject(NumberFormat.java:276)
+	at java.text.Format.parseObject(Format.java:243)
+	at com.rocketsoft.systemmgmt.protocol.shell.HeaderColumnNameLineRecordParser.getObject(HeaderColumnNameLineRecordParser.java:64)
+	at com.rocketsoft.systemmgmt.protocol.shell.HeaderColumnNameLineRecordParser.parse(HeaderColumnNameLineRecordParser.java:47)
+	at com.rocketsoft.systemmgmt.protocol.shell.HeaderColumnNameLineBasedRecordSet.parse(HeaderColumnNameLineBasedRecordSet.java:70)
+	at com.rocketsoft.systemmgmt.protocol.shell.HeaderColumnNameLineBasedRecordSet.<init>(HeaderColumnNameLineBasedRecordSet.java:45)
+	at com.rocketsoft.systemmgmt.protocol.shell.HeaderColumnNameLineBasedScraperInfo.getRecordSet(HeaderColumnNameLineBasedScraperInfo.java:91)
+	at com.rocketsoft.systemmgmt.protocol.shell.ssh.SshCollector.getTableDataList(SshCollector.java:507)
+	at com.rocketsoft.systemmgmt.protocol.shell.ssh.SshCollector.getRawElementValueTables(SshCollector.java:406)
+	at com.rocketsoft.systemmgmt.protocol.AbstractProtocolHandler.getPropertyValueTable(AbstractProtocolHandler.java:68)
+	at com.rocketsoft.systemmgmt.collectors.ResourceCollector.getData(ResourceCollector.java:98)
+	at com.rocketsoft.systemmgmt.collectors.ResourceCollector.getData(ResourceCollector.java:67)
+	at com.rocketsoft.nm.systemmgmt.acquisition.SystemMgmtAcquisitionTask.runInternal(SystemMgmtAcquisitionTask.java:187)
+	at com.rocketsoft.nm.systemmgmt.acquisition.SystemMgmtAcquisitionTask.run(SystemMgmtAcquisitionTask.java:101)
+	at com.rocketsoft.core.util.RunnableExecutor$1.execute(RunnableExecutor.java:13)
+	at com.rocketsoft.denali.services.Task.run(Task.java:181)
+	at com.rocketsoft.denali.services.Task.start(Task.java:164)
+	at com.rocketsoft.denali.services.Clock.executeTaskSynchronous(Clock.java:407)
+	at com.rocketsoft.denali.services.Clock.access$600(Clock.java:21)
+	at com.rocketsoft.denali.services.Clock$TaskProcessor.process(Clock.java:857)
+	at com.rocketsoft.core.util.ActiveQueue$Dispatcher.run(ActiveQueue.java:538)
+	at com.rocketsoft.core.util.RunnableExecutor$1.execute(RunnableExecutor.java:13)
+	at com.rocketsoft.core.util.ThreadPool$Task$1.run(ThreadPool.java:471)
+	at com.rocketsoft.core.util.ThreadPool.executeSynchronousAndTrack(ThreadPool.java:697)
+	at com.rocketsoft.core.util.ThreadPool$TrackingThread.run(ThreadPool.java:773)
+[17:57:33.946] <run> : running again after skipping 4 runs for com.rocketsoft.nm.systemmgmt.acquisition.SystemMgmtAcquisitionTask@11b888c4[ser=6339 name="System Mgmt Acquisition Task" run=this pri=5 cyc=600000 start=1474409253946 expect=-1 cncl=false], cycleTime = 600000
+[2016.09.20 18:03:27.808] <nm.acquisition.soap.SOAPAcquisitionAgentImpl$SOAPAcquisitionTask.runInternal> WARNING: Request timeout QueryPerf from address=<IP: 10.17.16.26>
+[18:07:33.946] <nm.systemmgmt.acquisition.SystemMgmtAcquisitionTask.run> : skipping first consecutive run for com.rocketsoft.nm.systemmgmt.acquisition.SystemMgmtAcquisitionTask@11b888c4[ser=6339 name="System Mgmt Acquisition Task" run=this pri=5 cyc=600000 start=1474409853946 expect=-1 cncl=false], cycleTime = 600000
+[18:25:37.882] <nm.acquisition.soap.SOAPAcquisitionAgentImpl$SOAPAcquisitionTask.executeMultipleByResult> WARNING: Request timeout while complex request RetrievePropertiesEx from address=10.17.16.26
+[18:47:33.946] <nm.systemmgmt.acquisition.SystemMgmtAcquisitionTask.run> : running again after skipping 4 runs for com.rocketsoft.nm.systemmgmt.acquisition.SystemMgmtAcquisitionTask@11b888c4[ser=6339 name="System Mgmt Acquisition Task" run=this pri=5 cyc=600000 start=1474412253946 expect=-1 cncl=false], cycleTime = 600000
+[18:51:26.532] <nm.nortel.vpfm.licensing.NortelLicenseExpirationMonitor.warningLoop> WARNING: License expires in 4 days and 0 hours.
+[18:57:33.946] <nm.systemmgmt.acquisition.SystemMgmtAcquisitionTask.run> : skipping first consecutive run for com.rocketsoft.nm.systemmgmt.acquisition.SystemMgmtAcquisitionTask@11b888c4[ser=6339 name="System Mgmt Acquisition Task" run=this pri=5 cyc=600000 start=1474412853946 expect=-1 cncl=false], cycleTime = 600000
